@@ -1,0 +1,196 @@
+#VAR(Table, TABLE)
+#ADDTBL("intro.tbl", Table)
+#ACTIVETBL(Table)
+#SMA("LOROM00")
+
+#JMP($1D0020)
+#W24($1D0000)
+<frame><avatar>
+Các bạn đang chơi phiên bản thứ 3<line>
+trong dòng game "Huyền thoại Zelda",<line>
+phiên bản này có tựa đề:<line>
+"Tam bảo của chư thần".<line>
+(Kamigami no toraifosu)<pause><scroll>
+Phiên bản này ra đời năm 1991,chạy<line>
+trên máy Super Famicom (gọi tắt là<line>
+"SFC") của hãng Nintendō.<pause><scroll>
+Bản dịch Việt ngữ này tương thích với<line>
+tất cả các dòng máy SFC như SFC đời<line>
+1990,SFC đời 1993,SFC đời 1995,<line>
+SFC 1chip, SFC Junior.<pause><clear>
+Bản dịch này cũng chạy tốt trên các<line>
+phần cứng nhái của hệ máy này,chẳng<line>
+hạn như dòng máy Supaboy của hãng<line>
+Hyperkin hay dòng Super-NT của hãng<line>
+Analogue.<pause><scroll>
+Bản dịch Việt văn này cũng tương<line>
+thích với các đời phần cứng phiên bản<line>
+Âu Mỹ của SFC là "SNES" hay dân gian<line>
+Việt Nam vẫn gọi là<line>
+"đầu điện tử đĩa mềm".<pause><scroll>
+Ngoài ra,tất cả các phần mềm giả lập<line>
+hệ máy này trên các nền tảng khác<line>
+nhau như PC (Snes9X,Zsnes,Mesen,<line>
+BSNES,Higan,...) hay các thiết bị di<line>
+động (giả lập Retro-arch,Snes9X,...)<line>
+đều chạy tốt bản dịch này.<pause><scroll><end>
+
+#W24($1D0003)
+<frame><avatar>
+Bản gốc tiếng Nhật có dung lượng<line>
+8 triệu bit,còn bản dịch Việt văn này<line>
+có dung lượng 16 triệu bit.<pause><line>
+Có thể bạn sẽ hỏi vì sao dung lượng<line>
+bản dịch lại gấp đôi so với bản gốc?<pause><scroll><end>
+
+
+#W24($1D0006)
+<frame><avatar>
+Là bởi vì bản dịch này được mở rộng<line>
+dung lượng Rom để chứa thêm khoảng<line>
+15k dòng code với nhiều chức năng mới<line>
+mà bản gốc không có.<pause><scroll>
+Chẳng hạn,ở bản dịch này,người chơi<line>
+có thể nhấn một số nút bí mật ở một<line>
+số thời điểm bí mật để kích hoạt các<line>
+tính năng ẩn trong game.<pause><scroll>
+Những tính năng ẩn đó là gì,nút bí mật<line>
+đó là gì?Tôi không tiết lộ ở đây mà<line>
+để người chơi tự tìm hiểu.<pause><scroll><end>
+
+#W24($1D0009)
+<frame><avatar>
+Nếu đã từng chơi qua phiên bản gốc<line>
+tiếng Nhật hay các bản dịch tiếng Anh<line>
+thì hẳn bạn sẽ nhận ra nhiều điểm dị<line>
+biệt giữa bản dịch tiếng Việt này với<line>
+các bản còn lại.<pause><scroll>
+Khung thoại của bản dịch này được mở<line>
+rộng so với bản gốc,và nó cũng đã có<line>
+màu trong suốt giúp cho việc đọc chữ<line>
+dễ dàng hơn rất nhiều.<pause><line>
+Và giờ đây bạn cũng có thể nhấn các<line>
+nút L,R để chọn nhanh Item mà không<line>
+cần nhấn nút Start để truy cập vào<line>
+Menu Item.<pause><scroll>
+Bạn cũng có thể nhấn đồng thời các<line>
+nút:L + R + Start để khởi động<line>
+lại game mà không cần nhấn nút<line>
+reset trên máy SFC.<pause><scroll>
+Lưu ý rằng đây là tên các nút trên<line>
+tay cầm của máy chơi game Super<line>
+Famicom,không phải là các phím trên<line>
+bàn phím máy tính.<pause><line>
+Hãy lưu ý điều này nếu bạn chơi bằng<line>
+phần mềm giả lập trên máy tính.<pause><scroll>
+Ngoài ra,bản dịch này cũng khôi phục<line>
+lại chức năng Debug vốn có sẵn trong<line>
+code game,nhưng bị nhà sản xuất vô<line>
+hiệu hóa nên người chơi ở bản gốc<line>
+không thể sử dụng nó.<pause><scroll>
+Giờ thì bạn hoàn toàn có thể sử dụng<line>
+chức năng Debug ở bản dịch này,bằng<line>
+cách nhấn nút L + A để kích hoạt chức<line>
+chạy 1 frame.<pause><line>
+Nhấn giữ yên nút L + A để chạy liên<line>
+tục 1 frame,nhấn L+A lần nữa để giải<line>
+trừ chức năng Debug....<pause><scroll>
+Còn nếu sau khi nhấn L + A để kích<line>
+hoạt chức năng Debug mà nhấn tiếp<line>
+R + A thì sẽ chạy duy nhất 1 frame cho<line>
+mỗi lần nhấn R + A.<pause><scroll>
+Nghe khó hiểu phải không?<line>
+Cứ thử rồi sẽ biết...<pause><scroll><end>
+
+#W24($1D000C)
+<frame><avatar>
+Các bạn có thấy khó chịu khi ngoài<line>
+trời đang nắng nóng mà trong nhà lại<line>
+nhóm lò sưởi không?<pause><clear>
+Chờ tí để tôi cho tắt nắng đi nhé.<pause><scroll><end>
+
+#W24($1D000F)
+<frame><avatar>
+Tắt nắng đi là trông ấm cúng hơn hẳn.<pause><line>
+Mà thôi,quay lại câu chuyện lúc nãy.<line>
+Bạn có biết là bản dịch Việt ngữ này<line>
+có mức độ hoàn thành 120% không?<pause><scroll>
+Toàn bộ lời thoại và mọi thứ lặt vặt<line>
+khác đều được dịch sang tiếng Việt.<pause><line>
+Ngoài ra,bản dịch Việt ngữ này còn có<line>
+một số event ẩn,nhiều lời thoại ẩn mà<line>
+phải kích hoạt đúng lúc đúng cách mới<line>
+có thể xem được.<pause><scroll>
+Đây là những event và lời thoại vốn<line>
+không hề có ở bản gốc hay bất cứ<line>
+phiên bản ngôn ngữ nào khác.<pause><line>
+Và những lời thoại ẩn,event ẩn này<line>
+đều không làm ảnh hưởng tới nội dung<line>
+hay trải nghiệm game.<pause><scroll>
+Nhiều câu thoại bổ sung được thêm vào<line>
+bản dịch này nhằm tạo sự tự nhiên<line>
+cho mạch thoại,tránh sự cứng nhắc<line>
+trong lời thoại do các câu thoại<line>
+lặp lại một cách máy móc ở<line>
+bản gốc.<pause><scroll>
+Và toàn bộ mã nguồn của bản dịch này,<line>
+tất tần tật mọi thứ,hơn 15 nghìn dòng<line>
+mã máy Super Famicom cùng tất cả lời<line>
+thoại được dịch đều được công bố ở<line>
+trang chủ Stoneboat.<pause><scroll>
+Địa chỉ trang chủ Stoneboat nằm ở<line>
+phần tựa đề của game này.<pause><scroll><end>
+
+#W24($1D0012)
+<frame><avatar>
+Và đừng bao giờ gọi bản dịch tiếng<line>
+Việt này là bản "Việt hóa".<pause><scroll>
+Đây chỉ là một bản dịch tiếng Việt<line>
+của game Zelda 3 trên máy SFC,<line>
+phải là "Việt hóa".<pause><scroll>
+Bản dịch tiếng Việt,hay còn gọi là<line>
+bản "Việt ngữ hóa" là khái niệm hoàn<line>
+toàn khác với "Việt hóa".<pause><line>
+Đừng nhầm lẫn khái niệm của từ ngữ.<pause><scroll><end>
+
+#W24($1D0015)
+<frame><avatar>
+Và đừng quên rằng mọi bản dịch game<line>
+của Stoneboat từ năm 2009 tới tận<line>
+bây giờ đều luôn miễn phí.<pause><scroll>
+Đã là như như vậy,đang là như<line>
+vậy và sẽ luôn là như vậy.<line>
+Đừng bao giờ trả bất kỳ khoản<line>
+tiền nào cho bất kỳ ai để chơi các<line>
+bản dịch của Stoneboat.<pause><scroll>
+Nếu đây là game do tôi tự phát triển<line>
+thì tôi có toàn quyền thu phí người<line>
+chơi.Nhưng nếu tôi chỉ dịch ngôn ngữ<line>
+cái game của người khác,của các hãng<line>
+khác thì tôi hoàn toàn không có cái<line>
+quyền thu phí đó.<pause><scroll>
+Bản thân việc dịch một game sang ngôn<line>
+ngữ nào đó mà không được sự đồng ý<line>
+của nhà sản xuất đã là một sự xâm hại<line>
+tác quyền,nhưng nếu tôi không có mục<line>
+đích kiếm tiền từ bản dịch đó thì<line>
+tác giả còn có thể châm chước mà bỏ<line>
+qua cho.<pause><scroll>
+Còn khi tôi dịch game do người khác<line>
+tạo ra và kiếm lợi vật chất từ bản<line>
+dịch đó thì đây là hành động xâm hại<line>
+tác quyền mười mươi,không thể bỏ<line>
+qua.Ngay cả khi tôi nhận tiền donate<line>
+của người khác cũng vậy.<pause><scroll>
+Hãy cùng nâng cao nhận thức và trở<line>
+thành người chơi game văn minh.<pause><scroll>
+Thôi nói nhiều rồi,giờ để chút ánh<line>
+sáng chiếu rọi cho tâm hồn tôi bừng<line>
+nắng hạ...<pause><end>
+
+#JMP($1D7000)
+<frame><avatar>
+Dừng ngay hành động xâm hại tác<line>
+quyền,phá hoại bản dịch của người<line>
+khác đi bạn ơi.<pause><scroll>
+Người văn minh ai làm thế.<pause><scroll><end>

@@ -1,0 +1,4415 @@
+#VAR(Table, TABLE)
+#ADDTBL("invn.tbl", Table)
+#ACTIVETBL(Table)
+#SMA("LOROM00")
+
+#JMP($1A0000)
+
+//Ptr0
+#W24($1E0000)
+<end>
+
+//Ptr1
+#W24($1F0003)
+<text_spd><$00><blank>
+<migi><line>
+  <force_end><end>
+ 
+//Ptr2
+#W24($1F0006)
+<text_spd><$00><line>
+   <blank>
+<migi><force_end><end>
+
+//Ptr3
+#W24($1F0009)
+//<text_spd><$00>セ－ブして続ける<line>
+//セ－ブしておわる<blank>
+//セ－ブしないで続ける<end>
+      Save game rồi tiếp tục<line>
+      Save game rồi kết thúc<blank>
+      Kết thúc khỏi cần save<end>
+
+//Ptr4
+#W24($1F000C)
+//<text_spd><$00>0は <num>あ、 1は <num>い<line>
+//2は <num>う、 3は <num>え<end>
+<text_spd><$00>
+0 là <num><$00>,1 là <num><$01><line>
+2 là num <$02>,3 là <num><$03><end>
+
+//Ptr5
+#W24($1F000F)
+//私といっしょじゃ 入れないよ<end>
+Ta không vào chung đâu.<end>
+
+//Ptr6
+#W24($1F0012)
+<text_spd><$00>
+<migi><line>
+ <blank>
+ <$FE><$71><end>
+
+//Ptr7
+#W24($1F0015)
+<text_spd><$00>
+  <line>
+<migi><blank>
+  <$FE><$71><end>
+
+//Ptr8
+#W24($1F0018)
+<text_spd><$00>
+  <line>
+  <blank>
+<migi><$FE><$71><end>
+
+//Ptr9
+#W24($1F001B)
+<migi><line>
+   <$FE><$72><end>
+
+//PtrA
+#W24($1F001E)
+  <line>
+<migi><$FE><$72><end>
+
+//PtrB
+#W24($1F0021)
+//<$FE><$6A>、わしはちょっと<line>
+//出かけてくる。<blank>
+//心配する事はない。<pause><scroll>
+//朝までには戻ってくる。<scroll>
+//家を出るんじゃないぞ。<scroll>
+//<end>
+<color><$06>
+Ben şimdi işe gidiyorum. <line>
+Güle güle.<line>
+Yarin Zelda'yi değiştireceğim.<end>
+
+
+<$FE><$6A>,chú đi ra ngoài có<line>
+chút việc.Mày không cần lo đâu.<pause><scroll>
+Chú sẽ về trước khi trời sáng.<line>
+Đừng có ra khỏi nhà đấy nhé.<scroll><end>
+
+//PtrC
+#W24($1F0024)
+//うう...。<$FE><$6A>、お前だけは<line>
+//まきこみたくなかった...<blank>
+//家を出るなと言ったのに...<pause><scroll>
+//...こ、この剣と盾を持って行け<scroll>
+//よくきけ...Bボタンを押し続け<scroll>
+//剣に力をためるのだ。<pause><scroll>
+//そうすれば、ある－族だけに<scroll>
+//伝わる秘剣が使えるはずだ...。<scroll>
+//<$FE><$6A>よ、お前ならできる...<pause><scroll>
+//ゼルダ姫を お救いするのだ。<scroll>
+//お、お前は、姫の ... ...。<scroll>
+//<end>
+<color><$06><text_spd><$03>
+Utt...<$FE><$6A> đó à.<line>
+Chú không muốn kéo cháu<line>
+vào chuyện này đâu...<pause><scroll>
+Chú đã bảo là mày đừng có<scroll>
+ra khỏi nhà rồi mà...<pause><scroll><scroll><scroll><line>
+Hãy mang thanh kiếm...<line>
+và lá chắn này đi...<pause><scroll>
+Hãy nghe cho rõ...Hãy nhấn rồi giữ<line>
+yên nút B để tập trung tinh lực<scroll>
+vào thanh kiếm.<pause><scroll><scroll><scroll><line>
+Khi đó thì cháu mới dùng<line>
+được tuyệt chiêu bí kiếm truyền<line>
+thừa của gia tộc ta...<pause><scroll>
+<$FE><$6A>,nhất định cháu<scroll>
+sẽ làm được...<pause><scroll>
+Hãy cứu lấy Vương nữ Zelda.<scroll>
+Vì cháu,cháu... với Vương nữ là...<end>
+
+
+//PtrD
+#W24($1F0027)
+<color><$06>
+Con nít con nôi mà đêm hôm<line>
+khuya khoắt lang thang làm gì!<line>
+Khi nào lớn hẳn chơi đêm!<end>
+
+
+//PtrE
+#W24($1F002A)
+<color><$06>
+Nếu lạc đường thì nhấn nút X<line>
+để bật bản đồ lên mà xem...<line>
+Chú mày có biết không hả?<end>
+
+//PtrF
+#W24($1F002D)
+<color><$06>
+Nhấn nút A khi chạm vào đồ<line>
+vật để mang vác món đồ đó...<line>
+Chú mày có biết không hử?<end>
+
+//Ptr10
+#W24($1F0030)
+<color><$06>
+Khi cầm kiếm trong tay thì chú<line>
+mày nhấn nút B để sử dụng...<line>
+Đừng nói là quên rồi đấy nhé!<end>
+
+//Ptr11
+#W24($1F0033)
+<color><$06>
+Điểm phát sáng trên bản đồ có<line>
+lẽ là điểm đến của chú mày...<line>
+Có biết không hả nhóc con?<end>
+
+//Ptr12
+#W24($1F0036)
+<color><$06>
+Đứng trước rương báu mà nhấn<line>
+nút A thì rương sẽ mở ra,chú<line>
+mày có biết không hả?<end>
+
+//Ptr13
+#W24($1F0039)
+<color><$06>
+Khi nói chuyện với bọn ta thì<line>
+chú mày sẽ khôn ra nhiều đó,<line>
+có biết không hả nhóc con!<end>
+
+//Ptr14
+#W24($1F003C)
+<text_spd><$02><color><$06>
+Hãy đến gặp vị trưởng lão<line>
+trong thôn.Và hãy đi tìm thanh<line>
+kiếm Master-sword!<end>
+
+//Ptr15
+//おお ゼルダ姫無事でしたか!<line>
+//<name> お前ハが助け出して<blank>
+//くれたのですね。<end>
+#W24($1F003F)
+<text_spd><$02>
+Ồ Vương nữ Zelda,người vẫn được<line>
+bình an vô sự nhỉ!<name>,là do<blank>
+cậu cứu giúp nhỉ.<end>
+
+//Ptr16
+#W24($1F0042)
+<text_spd><$02>
+Uhm,có vẻ như tư tế đã bị ma nhập<line>
+mất rồi...<pause><line>
+Để đánh bại được hắn thì cần có<scroll>
+"Master-sword",thanh kiếm trị ma<scroll>
+quỷ trong truyền thuyết.<pause><scroll><scroll><scroll><line>
+Tôi cũng không rõ chuyện này,<line>
+nhưng nghe đâu có vị Trưởng lão<line>
+trong làng là con cháu của Thất<scroll>
+hiền giả.Cậu hãy tìm đến chỗ ông<scroll>
+ấy mà hỏi thăm...<pause><scroll>
+Để tôi đánh dấu vị trí của ông<scroll>
+ấy lên bản đồ cho cậu.<pause><$FE><$79><$30><scroll>
+Nhưng hãy cẩn trọng khi đi.<scroll>
+Bây giờ lính tráng trong thành<scroll>
+đều đang truy lùng cậu.<pause><scroll>
+... ... ... Tôi sẽ để Vương nữ<scroll>
+Zelda ẩn trốn tại đây.<pause><scroll>
+Cậu cứ an tâm mà đi.<pause><scroll>
+... ... ...<scroll><pause><scroll><scroll><line>
+Mà cậu có nghe gì không đấy?<line>
+<migi>Có<line>
+  Không<force_end><end>
+
+//Ptr17
+#W24($1F0045)
+<text_spd><$02>
+Nếu như đánh bại tên tư tế<line>
+thì có lẽ người trong thành<line>
+sẽ trở lại bình thường.<pause><scroll>
+Cậu hãy đi tìm đủ 3 biểu tượng<scroll>
+mà ngài Trưởng lão đã nói.<end>
+
+//Ptr18
+#W24($1F0048)
+<text_spd><$02>
+Nào,giờ cậu hãy mang theo 3 biểu<line>
+tượng này mà tiến vào khu rừng.<pause><line>
+Thanh kiếm Master-sword đang đợi<scroll>
+cậu đấy.<end>
+
+//Ptr19
+#W24($1F004B)
+<name>, cậu chậm một bước rồi...<line>
+Do tôi bất cẩn mà Vương nữ Zelda<line>
+bị bắt vào thành mất rồi.<pause><scroll>
+Chắc là Vương nữ bị giam trong<scroll>
+căn phòng ở trên cùng của ngọn<scroll>
+tháp trong thành.<pause><scroll>
+Cậu hãy làm gì đó...trước khi Vương<scroll>
+nữ Zelda bị hiến tế...<pause><scroll>
+Làm ơn,hãy cứu Vương nữ...<end>
+
+//Ptr1A
+//ありがとう <name><line>
+//あなたが 近づいてくるのを<blank>
+//感じていたわ。<end>
+#W24($1F004E)
+<text_spd><$02>
+Cảm ơn cậu,<name>.<line>
+Ta luôn cảm nhận được là cậu<line>
+đang đến gần.<end>
+
+//Ptr1B
+#W24($1F0051)
+<text_spd><$02>
+Thưa thần phụ,thật sự tất cả đều<line>
+là nhờ <name> đấy ạ.Gã tư tế đó<line>
+đã nói với con như vầy.<pause><scroll><scroll><scroll><line>
+Rằng:"chỉ cần vật tế cuối cùng<line>
+là ngươi bị hiến tế thì phong ấn<line>
+của Thất hiền giả sẽ bị giải trừ".<pause><scroll>
+<name>,ta cầu xin cậu!<scroll>
+Đừng để đất nước Hyrule này rơi<scroll>
+vào tay gã tư tế.<pause>Một khi phong ấn<scroll>
+của Thất hiền giả bị giải trừ thì<scroll>
+sức mạnh tà ác sẽ tràn lan.<pause><scroll>
+Trước khi điều đó xảy ra...<scroll>
+Cần phải đánh bại gã tư tế trước<scroll>
+khi điều đó xảy ra!<pause><scroll>
+Hãy bảo vệ đất nước này!<scroll>
+Ta tin chắc cậu sẽ làm được...<scroll>
+...Chắc chắn là cậu sẽ làm được...<end>
+
+//Ptr1C
+#W24($1F0054)
+<text_spd><$02>
+<name> hãy bảo trọng!<line>
+Ta sẽ ở đây cầu nguyện cho cậu<line>
+được bình an vô sự!<end>
+
+//Ptr1D
+#W24($1F0057)
+<frame_type><$02><text_spd><$04><color><$06>
+Hãy cứu ta......<wait><$01><line>
+Xin hãy cứu lấy ta...<pause><scroll><scroll><scroll><line><line>
+Ta đang bị giam giữ ở nhà ngục<line>
+dưới lòng đất trong thành...<pause><scroll><scroll><scroll><line><line>
+Ta tên là Zelda...<line>
+Và là người cuối cùng trong số<line>
+6 người bị hiến tế...<pause><scroll>
+Gã tư tế Agnim từ đâu vào thành,<scroll>
+toan biến bọn ta thành vật<scroll>
+tế thần để giải trừ phong ấn của<scroll>
+Thất hiền giả...<pause><scroll><scroll><scroll><line>
+... ...<line>
+Ta đang bị giam ở nhà ngục dưới<line>
+lòng đất trong thành...<pause><scroll>
+Hãy cứu ta... ...<scroll><end>
+
+//Ptr1E
+#W24($1F005A)
+<frame_type><$02><text_spd><$04><color><$06>
+Hãy giải cứu ta...<line>
+Ta đang bị giam cầm trong nhà<line>
+ngục dưới lòng đất.<pause><scroll><scroll><scroll><line>
+Xung quanh thành có một cái<line>
+hang thông với khu vườn bên<line>
+trong thành.<scroll>
+Cậu hãy tìm cái hang đó...<end>
+
+//Ptr1F
+#W24($1F005D)
+<text_spd><$02><color><$06>
+Trong phòng của phụ thân ta có<line>
+lối đi bí mật thông với Giáo hội.<pause><line>
+Ngài thần phụ ở đó hẳn sẽ giúp<scroll>
+đỡ chúng ta.<end>
+
+
+//Ptr20
+#W24($1F0060)
+<text_spd><$02><color><$06>
+Cái kệ trang trí kia có thể di<blank>
+chuyển được đấy.<pause><line>
+Mà cậu có đèn không?<scroll>
+Bên trong tối lắm,chả nhìn thấy<scroll>
+gì đâu.<pause><scroll>
+Khi nào cậu chuẩn bị xong thì ta<scroll>
+sẽ vào trong.Và nhớ là đẩy cái<scroll>
+từ bên trái nhé.Ta sẽ giúp sức!<end>
+
+//Ptr21
+#W24($1F0063)
+Hãy kéo cái cần này đi.<line>
+Nhấn giữ yên nút A rồi thử nhấn<line>
+nút chữ thập để kéo nó về trước.<end>
+
+//Ptr22
+//じゃあ、司際に気づかれる前に<line>
+//急いで逃げましょう!<blank>
+//私 秘密の抜け道を知ってるの<pause><scroll>
+//とにかく、1Fのホ－ルまで<scroll>
+//私を連れて行って。<scroll>
+//さあ、急いで...。<end>
+#W24($1F0066)
+<text_spd><$02>
+Vậy thì hãy mau trốn đi trước khi<line>
+gã tư tế ấy phát hiện ra chúng ta!<blank>
+Ta biết một lối thoát bí mật.<pause><scroll>
+Nhưng trước hết hãy dẫn ta lên<scroll>
+sảnh tầng 1 đã.<pause><scroll>
+Nào,nhanh lên...<end>
+
+//Ptr23
+// ... ... ...<line>
+//<name> よくきいて<blank>
+//この城の兵たちは、みんな<pause><scroll>
+//司際アグニムの、魔術に<scroll>
+//あやつられているの。<scroll>
+//お父様は、たぶん もう ...<pause><scroll>
+//司際は、人間ではないわ!<scroll>
+//強い力を持った悪魔よ!<scroll>
+//... ... ...<pause><scroll>
+//ねえ ちゃんときこえた?<scroll>
+//  》 う  ん<scroll>
+//    ぜんぜん<force_end><end>
+#W24($1F0069)
+<text_spd><$02>
+... ... ...<line>
+<name>,hãy nghe ta nói.<blank>
+Tất cả binh sĩ trong thành này đều<scroll>
+bị thao túng dưới tà thuật của gã<scroll>
+tư tế Agnim mất rồi.<pause><scroll>
+Và có lẽ phụ vương ta cũng đã...<pause><scroll>
+Gã tư tế ấy,hắn không phải con<scroll>
+người!Hắn là ác ma với sức mạnh<scroll>
+khủng khiếp!<pause><scroll>
+... ... ... <name>,<scroll>
+Cậu có nghe ta nói không đấy?<scroll>
+<migi>Đang nghe mà<scroll>
+  Không nghe<force_end><end>
+
+//Ptr24
+//長老が、印してくれた地図の点<line>
+//を頼りに行けば良いわ。<blank>
+//迷ったらうらない屋によってネ<end>
+#W24($1F006C)
+<text_spd><$02>
+Chỉ cần đi theo điểm mà Trưởng<line>
+lão đã đánh dấu trên bản đồ là<line>
+được.<pause>Và nhớ là khi nào cậu lạc<scroll>
+đường thì hãy ghé tới chỗ xem bói.<end>
+
+//Ptr25
+//すごいわ! <name>...。<line>
+//やはり、あなたは『勇者』と<blank>
+//なるべき力を秘めていたのよ!<pause><scroll>
+//あとは、マスタ－ソ－ドを手に<scroll>
+//入れるだけね! だいじょうぶ<scroll>
+//あなたなら司際に勝てるわ!<end>
+#W24($1F006F)
+<text_spd><$02>
+Giỏi quá!<name>...<line>
+Quả nhiên là bên trong cậu tiềm<line>
+ẩn sức mạnh để trở thành Dũng sĩ!<pause><scroll>
+Giờ chỉ còn lấy được thanh kiếm<scroll>
+Master-sword nữa là xong!<pause><scroll>
+Sẽ ổn thôi.Chắc chắn cậu sẽ đánh<scroll>
+bại được gã tư tế đó!<end>
+
+//Ptr26
+//<frame_type><$02><text_spd><$06><name>! たすけて!<line>
+//し、城の兵たちが、教会へ...<blank>
+//キャアァァ～ ... ... ...<end>
+#W24($1F0072)
+<text_spd><$02>
+<frame_type><$02><text_spd><$04>
+<name>!Hãy cứu ta!<line>
+Đám binh sĩ đang tràn vào<line>
+Giáo hội...Kyaaa~<end>
+
+//Ptr27
+//この水路をぬけてしまえば、<line>
+//教会まであとすこし...。<blank>
+//気を付けて行きましょう。<end>
+#W24($1F0075)
+Chỉ cần vượt qua cái hào nước này<line>
+là gần đến Giáo hội rồi...<blank>
+Hãy cẩn thận nhé.<end>
+
+//Ptr28
+//この先が、教会の中なの。<line>
+//この部屋のスイッチを引っぱる<blank>
+//のよ。<end>
+#W24($1F0078)
+<text_spd><$02>
+Phía trước là bên trong Giáo hội.<line>
+Hãy kéo công tắc ở trong căn<line>
+phòng này đi.<end>
+
+//Ptr29
+#W24($1F007B)
+<text_spd><$02>
+Ái chà,<name> đó à.<line>
+Cháu gặp bà bà có chuyện gì?<pause><line>
+Tìm Trưởng lão hả?<scroll>
+Ông ấy đã bỏ nhà đi đâu mất từ<scroll>
+khi gã tư tế bắt đầu săn lùng<scroll>
+vật tế thần.<pause><scroll>
+... ... ...<scroll>
+Cái gì?Đi tìm Master-sword á?<scroll>
+Tuy ta đã quên hết chi tiết rồi<scroll>
+nhưng đại khái thì...<end>
+
+//Ptr2A
+#W24($1F007E)
+<text_spd><$02>
+Ngày xửa ngày xưa,ở vùng đất này<line>
+có tộc Hylia cực kỳ hưng thịnh...<pause><line>
+Nghe đâu ở vùng đất này vẫn còn<scroll>
+ẩn giấu nhiều bảo vật của dân tộc<scroll>
+đó để lại...<pause><scroll>
+Trong số đó có thanh kiếm được gọi<scroll>
+là Master-sword,nó được rèn nên<scroll>
+để khắc chế kẻ mang sức mạnh tà<scroll>
+ác.<pause>Và giờ đây nó đang say ngủ<scroll>
+tĩnh lặng ở sâu trong rừng.<pause><scroll>
+... ... ...<pause><scroll>
+Như vầy như vầy...<pause><scroll>
+Cháu có nghe nghiêm túc không đó?<scroll>
+<migi>Cháu vẫn đang nghe<scroll>
+  Không hề<force_end><end>
+  
+//Ptr2B
+#W24($1F0081)
+<text_spd><$02>
+Mà thôi,hãy đi tìm Trưởng lão đi.<line>
+Chắc có ai đó trong làng biết ông<line>
+ấy đang ở đâu.<pause><scroll>
+Nếu cháu sớm gặp được ông ấy<scroll>
+thì tốt.<name>,đi đường bảo<scroll>
+trọng nhé...<end>
+
+//Ptr2C
+#W24($1F0084)
+Ồ <name> đó à.<line>
+Cháu lớn rồi nhỉ.<line>
+Hãy cứu lấy dân làng nhé.<end>
+
+//Ptr2D
+#W24($1F0087)
+Á!Là thằng <name> bị truy nã!<line>
+Mấy anh lính ơi~<line>
+Mau bắt nó!<end>
+
+//Ptr2E
+#W24($1F008A)
+<text_spd><$02>
+Uhm,cuối cùng cháu đã tìm đủ 3<line>
+cái biểu tượng rồi nhỉ.Vậy hãy<line>
+đến khu rừng Lạc lối.<pause><scroll>
+Nếu cháu là Dũng sĩ thật sự thì<scroll>
+hẳn thanh kiếm sẽ lựa chọn cháu... ...<scroll>
+... ... ...<end>
+
+//Ptr2F
+#W24($1F008D)
+<text_spd><$02>
+Bọn ta già rồi,không chiến đấu<line>
+được nữa.Tất cả đành trông đợi<line>
+vào cháu thôi...<end>
+
+//Ptr30
+#W24($1F0090)
+<text_spd><$02>
+Quả đúng ta là Trưởng lão<line>
+Sahasrahla,một trong số các tử<line>
+tôn của Thất hiền giả.<pause><scroll>
+... ... ...<scroll>
+Sao?<name>,con hãy còn ít tuổi<scroll>
+mà muốn đi tìm thanh kiếm diệt trừ<scroll>
+ma quỷ ư!<pause><scroll>
+Nhưng không phải ai cũng dùng được<scroll>
+thanh kiếm đó đâu.<pause><scroll>
+Dân Hylia có truyền thừa rằng chỉ<scroll>
+có vị Dũng sĩ đánh bại được 3 con<scroll>
+yêu quái,tìm đủ 3 biểu tượng mới<scroll>
+có thể lấy được thanh kiếm đó...<pause><scroll><scroll><scroll><line>
+Con có muốn thử sức không?<line>
+<migi>Chiến luôn!<line>
+  Dĩ nhiên rồi<force_end><end>
+
+//Ptr31
+#W24($1F0093)
+<text_spd><$02>
+Vậy tốt lắm.Hãy thử tìm<line>
+"Biểu tượng của Dũng khí" được cất<line>
+giữ đâu đó trong thần điện này đi.<pause><scroll>
+Nếu con mang nó về đây được thì<scroll>
+ta sẽ kể con nghe những điều ta<scroll><sfx><$2D>
+biết.Nào,hãy mau vào thần điện.<end>
+
+//Ptr32
+#W24($1F0096)
+<text_spd><$02>
+Ngoài ta ra thì những người con<line>
+cháu khác của Thất hiền giả cũng<line>
+đang ẩn thân để trốn tránh những<scroll>
+kẻ trong thành.Hãy đi tìm họ.<end>
+
+//Ptr33
+#W24($1F0099)
+<text_spd><$04><frame_type><$02>
+Này <name>,con có nghe thấy ta,<line>
+Hiền giả Sahasrahla không?<pause><line>
+Nơi con đang đứng bây giờ từng là<scroll>
+thế giới được gọi là Thánh địa...<pause><scroll>
+Nhưng giờ đây nó đã trở thành thế<scroll>
+giới của bóng tối,nơi Ma tộc hoành<scroll>
+hành.<pause><scroll><scroll><scroll><line>
+Có vẻ như gã tư tế đã mở được<line>
+phong ấn, khai thông đường nối<line>
+nơi này với thế giới bóng tối từ<scroll>
+cổng thành rồi.<pause><scroll>
+Để cứu thế giới này thì chỉ còn<scroll>
+một cách duy nhất,đó là lấy lại<scroll>
+"sức mạnh Hoàng kim"!<pause><scroll>
+Hãy cứu 7 vị Vương nữ.<pause><scroll>
+Nhất định sức mạnh của các vị ấy,<scroll>
+tử tôn của Thất hiền giả,sẽ giúp<scroll>
+ích cho con rất nhiều!<pause><scroll>
+Các vị Vương nữ ấy,từng người<scroll>
+đều đang bị giam giữ trong<scroll>
+sào huyệt ẩn của yêu quái.<pause><scroll>
+Đầu tiên con hãy đến thần điện<scroll>
+bóng tối!<sfx><$2D><pause><scroll>
+<name>,chỉ có con mới có thể thực<scroll>
+hiện nguyện vọng của ta...<pause><scroll>
+Chỉ mỗi mình con...<scroll>
+Đừng phụ lòng Sahasrahla này.<end>
+
+//Ptr34
+#W24($1F009C)
+<text_spd><$04><frame_type><$02>
+Nhưng với hình dạng như vậy thì<line>
+con chẳng làm được gì cả...<pause><line>
+Hãy đến ngọn tháp trên núi Hebra<scroll>
+mà tìm viên ngọc trai mặt trăng.<pause><scroll>
+Viên ngọc Moon Pearl đó sẽ bảo vệ<scroll>
+con khỏi ma lực của thế giới bóng<scroll>
+tối,giúp con giữ được hình dạng<scroll>
+của Dũng sĩ.<end>
+
+//Ptr35
+#W24($1F009F)
+<textbox_pos><$01><text_spd><$02>
+Trong hang động phía Đông của hồ<line>
+Hylia có món bảo bối có thể giúp<line>
+được cho con.Nhất định hãy tìm nó.<end>
+
+//Ptr36
+#W24($1F00A2)
+<textbox_pos><$01><text_spd><$02>
+Sao?<name>,con hãy còn ít tuổi<line>
+mà muốn đi tìm thanh kiếm diệt trừ<line>
+ma quỷ ư!<pause><scroll>
+Nhưng không phải ai cũng dùng được<scroll>
+thanh kiếm đó đâu.<pause><scroll>
+Dân Hylia có truyền thừa rằng chỉ<scroll>
+có vị Dũng sĩ đánh bại được 3 con<scroll>
+yêu quái,tìm đủ 3 biểu tượng mới<scroll>
+có thể lấy được thanh kiếm đó...<pause><scroll><scroll><scroll><line>
+Con đã có "biểu tượng Dũng khí"<line>
+rồi nhỉ.Vậy để ta nói thêm một<line>
+chút để con biết...<pause><scroll>
+Ngày xửa ngày xưa,từng có một<scroll>
+dòng tộc bảo vệ Vương gia Hylia.<pause><scroll>
+Bọn họ được gọi là tộc Kỵ sĩ,<scroll>
+và là những người cai quản biểu<scroll>
+tượng của Dũng khí.<pause><scroll>
+Nhưng khi Thất hiền giả tiến hành<scroll>
+phong ấn thì bọn họ diệt vong gần<scroll>
+hết trong trận chiến với Ma tộc.<pause><scroll>
+Nhưng chắc chắc một vị Dũng sĩ,<scroll>
+người thừa hưởng dòng máu của tộc<scroll>
+Kỵ sĩ đó sẽ xuất hiện.<pause><scroll>
+...Tốt lắm,<name>.<scroll>
+Ta tin con.<pause><scroll><scroll><scroll><line><sfx><$2D>
+Hãy mang những biểu tượng còn lại<line>
+về đây gặp ta.Và hãy mang cái này<line>
+đi.<pause><scroll>
+Đây,ta cho con bảo vật của tộc<scroll>
+Hiền giả bọn ta.<end>
+
+//Ptr37
+#W24($1F00A5)
+<textbox_pos><$01><text_spd><$02>
+Quả đúng ta là Trưởng lão<line>
+Sahasrahla,một trong số các tử<line>
+tôn của Thất hiền giả.<pause><scroll>
+... ... ...<scroll>
+Sao?<name>,con hãy còn ít tuổi<scroll>
+mà muốn đi tìm thanh kiếm diệt trừ<scroll>
+ma quỷ ư!<pause><scroll>
+Nhưng không phải ai cũng dùng được<scroll>
+thanh kiếm đó đâu.<pause><scroll>
+Dân Hylia có truyền thừa rằng chỉ<scroll>
+có vị Dũng sĩ đánh bại được 3 con<scroll>
+yêu quái,tìm đủ 3 biểu tượng mới<scroll>
+có thể lấy được thanh kiếm đó...<pause><scroll><scroll><scroll><line>
+Con đã có "biểu tượng Dũng khí"<line>
+rồi nhỉ.Vậy để ta nói thêm một<line>
+chút để con biết...<pause><scroll>
+Ngày xửa ngày xưa,từng có một<scroll>
+dòng tộc bảo vệ Vương gia Hylia.<pause><scroll>
+Bọn họ được gọi là tộc Kỵ sĩ,<scroll>
+và là những người cai quản biểu<scroll>
+tượng của Dũng khí.<pause><scroll>
+Nhưng khi Thất hiền giả tiến hành<scroll>
+phong ấn thì bọn họ diệt vong gần<scroll>
+hết trong trận chiến với Ma tộc.<pause><scroll>
+Nhưng chắc chắc một vị Dũng sĩ,<scroll>
+người thừa hưởng dòng máu của tộc<scroll>
+Kỵ sĩ đó sẽ xuất hiện.<pause><scroll>
+...Tốt lắm,<name>.<scroll>
+Ta tin con.<pause><scroll><scroll><scroll><line><sfx><$2D>
+Hãy mang những biểu tượng còn lại<line>
+về đây gặp ta.Và hãy mang cái này<line>
+đi.<pause><scroll>
+Đây,ta cho con bảo vật của tộc<scroll>
+Hiền giả bọn ta.<end>
+
+///Ptr38
+//7賢者の血をひく娘をみつけた<line>
+//者には、ほうびとして<blank>
+//100ルピ－とらせる 国王<end>
+#W24($1F00A8)
+"Thưởng 100 Rupee cho kẻ nào tìm<line>
+được cô gái dòng dõi của Thất<line>
+hiền giả" - Quốc vương xứ Hyrule<end>
+
+//Ptr39
+#W24($1F00AB)
+Đối tượng truy nã <zelda1><zelda2> <name><line>
+là kẻ bắt cóc Vương nữ Zelda đưa<line>
+đi khỏi thành.Ai thấy phải tri hô!<end>
+
+//Ptr3A
+#W24($1F00AE)
+Nguy hiểm!<line>
+Không được tự tiện vào núi Hebra!<end>
+
+//Ptr3B
+#W24($1F00B1)
+Phía Bắc là khu rừng Lạc lối.<end>
+
+//Ptr3C
+#W24($1F00B4)
+Nguy hiểm!<line>
+Chú ý chỗ sâu và <line>
+coi chừng lũ Zöra!<end>
+
+//Ptr3D
+#W24($1F00B7)
+Chào mừng quý khách đến với<line>
+hiệu bán đồ ma pháp.<blank>
+Thác Nguyện ước ở phía sau.<end>
+
+//Ptr3E
+#W24($1F00BA)
+Đầu kia của cái hang này có lối<line>
+thông với làng Kakariko.<end>
+
+//Ptr3F
+#W24($1F00BD)
+Phía Nam là hồ Hylia.<line>
+Có thầy xem bói rất linh.<end>
+
+//Ptr40
+#W24($1F00C0)
+Phía Tây khu vực này<line>
+là làng Kakariko.<end>
+
+//Ptr41
+#W24($1F00C3)
+Phía Tây khu vực này là<line>
+sa mạc Huyễn hoặc.<blank>
+Chú ý địa lôi!<end>
+
+//Ptr42
+#W24($1F00C6)
+Phía Đông Bắc khu vực này là hiệu<line>
+bán đồ ma pháp.Phía sau cửa hiệu<line>
+là con thác Nguyện ước.<end>
+
+//Ptr43
+#W24($1F00C9)
+Phía Đông khu vực này là Thần<line>
+điện phía Đông.Phía Tây khu vực<line>
+này là thành Hyrule.<end>
+
+//Ptr44
+#W24($1F00CC)
+<line>
+      Hồ Hylia<end>
+	  
+//Ptr45
+#W24($1F00CF)
+Đừng bắt chuyện với ta.<line>
+Ta là một ông chú lập dị.<blank>
+Và đừng có nhổ cái cọc này.<end>
+
+//Ptr46
+#W24($1F00D2)
+Túp lều của 2 chú tiều<line>
+Trương Tam và Lý Tứ,<line>
+nơi 2 quả tym vàng hội ngộ.<end>
+
+//Ptr47
+#W24($1F00D5)
+Phía Nam khu vực này là<line>
+làng Kakariko.<end>
+
+//Ptr48
+#W24($1F00D8)
+Tan đều~Tan đều~<line>
+Thuốc ma pháp nấu từ nấm<line>
+này tan nhuyễn thật đấy.<end>
+
+//Ptr49
+#W24($1F00DB)
+Hihhi.Cảm ơn cậu nhé.Và nhớ ghé<line>
+cửa hiệu bên trên nhé.Ta có món<line>
+quà tặng cậu đấy...Hihhi.<end>
+
+//Ptr4A
+#W24($1F00DE)
+Ồ,mùi trái cây ngọt ngào thối<line>
+rữa đây mà...<pause>Nếu cậu cho ta cây<line>
+nấm đó thì ta sẽ làm được món<scroll>
+hay...Hihhi.<end>
+
+//Ptr4B
+#W24($1F00E1)
+Nếu cậu muốn nhận thuốc của ta<line>
+thì cần phải có một cái lọ ma<line>
+pháp...Hihhi.<end>
+
+//Ptr4C
+#W24($1F00E4)
+<text_spd><$02>
+Loại màu đỏ là thuốc sinh mệnh,<line>
+loại màu xanh lá là thuốc ma pháp,<line>
+loại màu da trời là ma pháp kết<scroll>
+hợp với thuốc sinh mệnh.<pause><scroll>
+Nếu cậu uống thuốc màu đỏ<scroll>
+ngay tại đây thì không cần trả<scroll>
+Rupee đâu.<pause><scroll>
+Nào,uống đi... ... Hihhi...<end>
+
+//Ptr4D
+#W24($1F00E7)
+Không có cái lọ đựng thì không<line>
+được mua thuốc của ta đâu.<line>
+Hihhi.<end>
+
+//Ptr4E
+#W24($1F00EA)
+Lọ của cậu đầy rồi,chẳng chứa<line>
+thêm được gì cả.Hihhi.<end>
+
+//Ptr4F
+//カンテラを 手に入れた<line>
+//Yボタンでとうろうに火をつけ<blank>
+//れるぞ!<end>
+#W24($1F00ED)
+<name> tìm thấy cái đèn lồng!<line>
+Nhấn nút Y trên tay cầm Super<line>
+Famicom để tiếp lửa cho nến!<end>
+
+//Ptr50
+//ブ－メランだ!<line>
+//STARTボタンで、選んで<blank>
+//使ってみよう!<end>
+#W24($1F00F0)
+<name> nhặt được cái Boomerang!<line>
+Nhấn nút START để bật Menu rồi<line>
+chọn Item muốn dùng!<end>
+
+//Ptr 51
+#W24($1F00F3)
+<name> tìm thấy cây cung!<line>
+Vậy là có thể bắn tên được rồi!<line>
+Bắn đến khi nào hết tên thì thôi!<end>
+
+//Ptr 52
+#W24($1F00F6)
+<name> mượn được cái xẻng!<line>
+Xẻng đào lỗ ở chỗ đào được.<line>
+Nào,thử đào đi.<end>
+
+//Ptr 53
+#W24($1F00F9)
+Đây là áo choàng ma thuật!<line>
+Mặc vào sẽ ẩn hình,nhưng chú ý<line>
+bình ma pháp!<end>
+
+//Ptr 54
+#W24($1F00FC)
+Đây là bột ma pháp!<line>
+Hãy thử rắc nó lên kẻ địch và<line>
+những thứ khác xem sao!<end>
+
+//Ptr 55
+#W24($1F00FF)
+<name> đã mua chân vịt Zöra!<line>
+Dùng cái này để bơi lội thoải mái<line>
+ở những chỗ nước sâu!<end>
+
+//Ptr 56
+#W24($1F0102)
+<name> tìm được găng tay lực sĩ!<line>
+Với cái này thì sức lực tràn trề<line>
+đôi tay,có thể vác cả đá tảng!<end>
+
+//Ptr 57
+#W24($1F0105)
+<name> đã tìm được<line>
+"Biểu tượng của dũng khí"!<pause><line>
+Hãy đưa nó cho Trưởng lão<scroll>
+Sahasrahla xem!<pause><scroll>
+Vẫn còn 2 cái biểu tượng<scroll>
+khác nữa!<end>
+
+//Ptr 58
+#W24($1F0108)
+<name> đã tìm được<line>
+"Biểu tượng của sức mạnh"!<pause><line>
+<name> đã mạnh hơn trước rồi!<scroll>
+Nào,hãy đi tìm biểu tượng<scroll>
+cuối cùng!<end>
+
+//Ptr 59
+#W24($1F010B)
+<name> đã tìm được<line>
+"Biểu tượng của trí tuệ"!<pause><line>
+Hoan hô!Đã tìm đủ 3 biểu tượng rồi!<scroll>
+Giờ hãy tiến về khu rừng nơi thanh<scroll>
+Master-sword say ngủ nào!<end>
+
+//Ptr 5A
+#W24($1F010E)
+Cây nấm có mùi trái cây ngọt thối<line>
+rữa...Nhấn nút Y để trao nó cho<line>
+người khác.<end>
+
+//Ptr 5B
+#W24($1F0111)
+<name> tìm thấy quyển sách Thủ ấn!<line>
+Vậy là có thể đọc hiểu được văn<line>
+tự cổ của tộc Hylia rồi!<end>
+
+//Ptr 5C
+#W24($1F0114)
+<name> tìm được viên ngọc trai mặt<line>
+trăng!Nó bảo vệ Dũng sĩ khỏi sức<line>
+mạnh Hoàng kim mà kẻ ác sử dụng,<pause><scroll>
+không làm thay đổi hình dạng<scroll>
+Dũng sĩ.<end>
+
+//Ptr 5D
+#W24($1F0117)
+<name> tìm được cái compas!<line>
+Vậy là hoàn toàn biết rõ vị trí<line>
+của tên trùm ở khu này!<end>
+
+//Ptr5E
+//MAPを 手に入れた!<line>
+//XボタンをPUSHすると<blank>
+//現在地と全体がわかるはずだ!<end>
+#W24($1F011A)
+<name> nhặt được bản đồ!<line>
+Nhấn nút X để xem vị trí hiện tại<line>
+và toàn cảnh!<end>
+
+//Ptr5F
+#W24($1F011D)
+<name> tìm được pháp trượng băng!<line>
+Nó bắn ra khí lạnh cắt xé cả không<line>
+khí!Chú ý thanh ma pháp khi dùng!<end>
+
+//Ptr60
+#W24($1F0120)
+<name> tìm được pháp trượng lửa!<line>
+Nó phun ra ngọn lửa tam muội đốt<line>
+cháy vạn vật!<pause><scroll>
+Chú ý thanh ma pháp khi dùng pháp<scroll>
+trượng này!<end>
+
+//Ptr61
+#W24($1F0123)
+<text_spd><$02>
+<name> tìm được mề đay ma pháp<line>
+"Ether"!Đây là ma pháp sai khiến<line>
+không khí và khí lạnh.<pause><scroll>
+Cần chú ý thanh ma pháp khi<scroll>
+dùng món này!<end>
+
+//Ptr62
+#W24($1F0126)
+<text_spd><$02>
+<name> tìm được mề đay ma pháp<line>
+"Bomber"!Đây là ma pháp khiển<line>
+đạn nổ khắp mặt đất.<pause><scroll>
+Cần chú ý thanh ma pháp khi<scroll>
+dùng món này!<end>
+
+//Ptr63
+#W24($1F0129)
+<text_spd><$02>
+<name> tìm được mề đay ma pháp<line>
+"Shake"!Đây là ma pháp khiển<line>
+đại địa rung chuyển mà giam chân<scroll>
+quân thù.<pause><scroll>
+Cần chú ý thanh ma pháp khi<scroll>
+dùng món này!<end>
+
+//Ptr64
+#W24($1F012C)
+<name> tìm được chiếc búa ma pháp!<line>
+Đi đâu gõ đó!Gặp gì gõ nấy!Gõ gõ<line>
+nữa gõ gõ mãi!<end>
+
+//Ptr65
+#W24($1F012F)
+Chu choa ở đây có cái Ocarina!<line>
+Chắc chắn là âm sắc của nó hàm<line>
+chứa sức mạnh bất khả tư nghì!<end>
+
+//Ptr66
+#W24($1F0132)
+Pháp trượng Somalia đã vào tay<line>
+<name>!Đây là pháp trượng bất khả<line>
+tư nghì,rất hữu ích khi dùng!<end>
+
+//Ptr67
+#W24($1F0135)
+<text_spd><$02>
+<name> tìm được cái móc dây!<line>
+Còn ai nhớ Rikimaru trong Tenchū<line>
+không?Cả anh trai khắc nhập khắc<scroll>
+xuất nữa!<pause><scroll>
+Cái móc này biến huyễn tự tại,khi<scroll>
+dài khi ngắn tùy ý.Hãy dùng nó để<scroll>
+tìm kiếm đồ đạc xem sao!<end>
+
+//Ptr68
+//バクダンを 手に入れた。<line>
+//おいたバクダンを Aボタンで<blank>
+//かついで、投げられるぞっ!<end>
+#W24($1F0138)
+<name> tìm được lựu đạn!<line>
+Nhấn nút A để vác lựu đạn trên<line>
+sàn,nhấn A lần nữa để ném!<end>
+
+//Ptr69
+//これは ビンだ。中に色々<line>
+//入れることができる。<blank>
+//入れた物はあとで使えるぞ!<end>
+#W24($1F013B)
+<name> có cái bình rỗng chứa<line>
+được vạn vật.Thứ gì chứa trong<line>
+lọ thì để sau dùng được hết!<end>
+
+//Ptr6A
+//大きなカギを 手に入れた。<line>
+//小さなカギでは 開かない<blank>
+//ジョウ前を開く事ができるぞ!<end>
+#W24($1F013E)
+<name> nhặt được chìa khóa to.<line>
+Vậy là có thể mở được cửa ngục<line>
+mà chìa khóa nhỏ không mở được!<end>
+
+//Ptr6B
+#W24($1F0141)
+<name> tìm được găng tay Kim cang!<line>
+Giờ có thể vác được cả tảng đá đen<line>
+to nặng trước đây không vác được!<end>
+
+//Ptr6C
+#W24($1F0144)
+<name> nhận được chiếc gương ma<line>
+pháp!Chiếc gương tuyệt đẹp xanh<line>
+ngắt như hút hồn vào trong.<end>
+
+//Ptr6D
+#W24($1F0147)
+Hoan hô!Cuối cùng cũng lấy được<line>
+Master-sword rồi...Mà khoan!<line>
+Có vẻ sai sai...Hàng pha kè rùi!<end>
+
+//Ptr6E
+#W24($1F014A)
+<text_spd><$06>
+Có tiếng nói của Trưởng lão<line>
+Sahasrahla từ đâu vọng về...<pause><scroll><scroll><scroll>
+<text_spd><$02>
+... ... ...<pause><scroll>
+Này <name>,con đã có được thanh<line>
+kiếm Master-sword diệt trừ ma quỷ...<pause><scroll>
+Con thấy không,mọi ánh sáng lấp<scroll>
+lánh của nó giờ đây đều là sức<scroll>
+mạnh của con.<pause><scroll>
+Với thanh kiếm này,con có thể phá<scroll>
+tan ma lực của gã tư tế Agnim rồi!<pause><scroll><scroll><scroll><line>
+Vận mệnh của Vương quốc này giờ<line>
+đây nằm trong tay con.<pause><scroll>
+Ta trông đợi ở con đấy,<name> <$FE><$67>...<end>
+
+//Ptr6F
+#W24($1F014D)
+Hihhi cảm ơn nhiều!<line>
+Đó là thuốc sinh mệnh,uống vào<line>
+hồi phục thể lực.<end>
+
+//Ptr70
+#W24($1F0150)
+Hihhi cảm ơn nhiều!<line>
+Đó là thuốc ma pháp,uống vào<line>
+hồi phục ma lực.<end>
+
+//Ptr71
+#W24($1F0153)
+Hihhi cảm ơn nhiều!<line>
+Đó là thuốc ma pháp và sinh mệnh,<line>
+uống vào hồi phục cả hai.<end>
+
+//Ptr72
+#W24($1F0156)
+<name> đã mượn được cái vợt bắt<line>
+bọ!Có lẽ nó còn bắt được nhiều thứ<line>
+khác ngoài bọ.Đó là bí mật...<end>
+
+//Ptr73
+#W24($1F0159)
+<name> tìm thấy cái áo xanh lá!<line>
+Mặc vào giảm được sát thương do<line>
+địch gây ra.Vui quá là vui~<end>
+
+//Ptr74
+#W24($1F015C)
+<name> tìm thấy cái áo màu đỏ!<line>
+Lực phòng ngự của áo này bạt<line>
+quần,tốt hơn cả áo xanh lá!<end>
+
+//Ptr75
+#W24($1F015F)
+Hoan hô!Kiếm của <name> trở nên<line>
+mạnh mẽ hơn rất nhiều!Dường như<line>
+có một sức mạnh tràn khắp cơ thể!<end>
+
+//Ptr76
+#W24($1F0162)
+<text_spd><$02>
+<name> tìm được chiếc khiên bằng<line>
+kính!<pause>Giờ có thể hồi quang phản<line>
+chiếu tia laser mà trước giờ bó<scroll>
+tay rồi!<end>
+
+//Ptr77
+#W24($1F0165)
+Pháp trượng Byla đây rồi!Chỉ cần<line>
+vung một cái là dải ánh sáng sẽ<line>
+bảo vệ thân ta.<end>
+
+//Ptr78
+//ムムッ、カギがかかっている。<line>
+//大きなカギがあれば、開けられ<blank>
+//そうだ!<end>
+#W24($1F0168)
+<color><$06>
+Hừm,bị khóa rồi!<line>
+Có vẻ như có chìa khóa to thì<line>
+sẽ mở được thôi!<end>
+
+//Ptr79
+//あっ魔法の力が足りない!<line>
+//このままでは、このアイテムは<blank>
+//使えないぞ!<end>
+#W24($1F016B)
+<name> không đủ ma lực để<line>
+sử dụng món Item này!<end>
+
+//Ptr7A
+#W24($1F016E)
+<name> nhận được đôi giày Pegasus!<line>
+Nhấn rồi giữ nút A một lát để lao<line>
+người húc vào đối phương!<end>
+
+//Ptr7B
+#W24($1F0171)
+<text_spd><$02>
+Ui dà trời ơi ngạc nghiên ghê~<line>
+Phải mấy trăm năm rồi ta mới gặp<line>
+một con người đàng hoàng hê hê.<pause><scroll>
+Mà tiện đây để ta nói chuyện hay<scroll>
+ho này cho cậu biết nhá.<scroll>
+Mà cậu biết gì chưa...<end>
+
+//Ptr7C
+#W24($1F0174)
+<text_spd><$02>
+Đó là bức tượng đá Gargoile trong<line>
+làng này.Nghe đồn là bên dưới nó<line>
+có tiếng nữ nhân kêu cứu.<pause><scroll>
+Cậu không thấy đó là chuyện rất<scroll>
+quái dị sao...<end>
+
+//Ptr7D
+#W24($1F0177)
+<text_spd><$02>
+Mà hình như thế giới này chính là<line>
+thứ mà Tam bảo Triforce ban cho<line>
+Ganon để thỏa ước nguyện của hắn.<pause><scroll>
+Cậu hỏi ước nguyện của Ganon là<scroll>
+gì á?Là trở thành vua của tất cả<scroll>
+cõi giới chứ còn gì nữa.<pause><scroll>
+Chỉ cần có được ma lực của cõi<scroll>
+bóng tối là có thể làm được chứ<scroll>
+gì khó đâu?<end>
+
+//Ptr7E
+#W24($1F017A)
+<text_spd><$02>
+Ta vốn từng sống ở khu rừng Lạc<line>
+lối ở thế giới ánh sáng,nhưng rồi<line>
+đi lạc vào ma pháp trận ở đó...<pause><scroll>
+Đến khi nhận ra thì đã tới khu<scroll>
+rừng Đầu lâu ở cõi bóng tối rồi.<pause><scroll>
+Chắc là 2 khu rừng này thông với<scroll>
+nhau nhỉ.<end>
+
+//Ptr7F
+#W24($1F017D)
+<text_spd><$02>
+Cứ đem lựu đạn mà chọi vào tên<line>
+khổng lồ Hinox thứ nhất là được.<pause><scroll>
+Mà ta chỉ nói vậy thôi.<end>
+
+//Ptr80
+#W24($1F0180)
+Đừng có làm cái trò<line>
+khiến ta bực mình!<end>
+
+//Ptr81
+#W24($1F0183)
+Hoan hô,<name> đã tìm được<line>
+"biểu tượng của sức mạnh"!<line>
+Vậy là đủ cả 3 biểu tượng rồi!<pause><scroll>
+Hãy tiến về khu rừng nơi thanh<scroll>
+kiếm Master-sword say ngủ nào!<end>
+
+//Ptr82
+#W24($1F0186)
+Hoan hô,<name> đã tìm được<line>
+"biểu tượng của trí tuệ"!<line>
+<name> đã mạnh hơn lúc trước!<pause><scroll>
+Nào,giờ hãy tiến về chỗ cái biểu<scroll>
+tượng cuối cùng nào!<end>
+
+//Ptr83
+#W24($1F0189)
+<text_spd><$02>
+Cửa hiệu trò chơi bắn cung đây~<line>
+Chỉ cần 20 Rupee là được bắn 5 mũi<line>
+tên...Nếu bắn trúng liên tục hết 5<scroll>
+phát sẽ được thưởng to!<pause><scroll>
+Sao,nhóc có muốn chơi không?<scroll>
+<migi>Chơi<scroll>
+  Không chơi<force_end><end>
+
+//Ptr84
+#W24($1F018C)
+<text_spd><$02>
+Vậy thì xin mời~<line>
+Nhắm cho chuẩn nhé!<end>
+
+//Ptr85
+#W24($1F018F)
+<text_spd><$02>
+Vậy thì đường về nhóc cứ đi thẳng<line>
+theo hướng đã tới đây là được~!<line>
+Chúc thượng lộ bình an~!<end>
+
+//Ptr86
+#W24($1F0192)
+<text_spd><$02>
+Chà,nhóc muốn chơi tiếp không?<line>
+<migi>Chơi tiếp<line>
+  Thôi chán rồi<force_end><end>
+
+//Ptr87
+#W24($1F0195)
+Đây là con suối hạnh phúc.<line>
+Ném Rupee vào đây thì ước nguyện<line>
+tất sẽ thành tựu.<pause><scroll>
+Bố thí cho ít Rupee nhé?<scroll>
+<migi>Bố thí cho mày<scroll>
+  Bố không thích thí<force_end><end>
+
+//Ptr88
+#W24($1F0198)
+Nhấn nút thập tự để lựa chọn rồi<line>
+nhấn nút Y để ném.<pause><scroll><scroll><scroll><$FE><$69><end>
+
+//Ptr89
+#W24($1F019B)
+Cậu làm rơi cái này phải không?<line>
+<migi>Phải<blank>
+  Không phải<force_end><end>
+
+//Ptr8A
+#W24($1F019E)
+Ta thích người công chính ngay<line>
+thẳng.Cho nên ta sẽ tặng cậu món<line>
+quà này!<end>
+
+//Ptr8B
+#W24($1F01A1)
+Thật sự không phải cái này sao?<line>
+<migi>Đúng là không phải<line>
+  Đúng là nó rồi<force_end><end>
+  
+//Ptr8C
+#W24($1F01A4)
+Con nít không được nói dối!<line>
+Mang đồ của cậu về đi!<end>
+
+//Ptr8D
+#W24($1F01A7)
+<name> nhận được Boomerang<line>
+ma pháp bay nhanh hơn,bay xa<line>
+hơn cái cũ!<end>
+
+//Ptr8E
+#W24($1F01AA)
+Cái khiên của <name> đã to hơn<line>
+trước,chặn được cả hỏa cầu rồi!<end>
+
+//Ptr8F
+#W24($1F01AD)
+Ồ,đây chính là "mũi tên bạc" dùng<line>
+để kết liễu Ganon đây mà!<end>
+
+//Ptr90
+#W24($1F01B0)
+Thuốc ma pháp đã đầy bình.<line>
+Lợi thì có lợi nhưng chả được mấy.<end>
+
+//Ptr91
+#W24($1F01B3)
+Kiếm của <name> đã mạnh hơn trước!<line>
+Cảm giác cầm vừa tay lắm.<end>
+
+//Ptr92
+#W24($1F01B6)
+<text_spd><$01>
+Đa tạ thí chủ đã rộng mở tâm hỷ xả<line>
+mà bố thí!Của cải vật chất là vật<line>
+ngoại thân,rồi cũng sẽ bỏ ta mà đi.<pause><scroll>
+Người cứ cất giữ của cải trong nhà<scroll>
+ắt sẽ bị trộm cướp nhòm ngó,mối<scroll>
+mọt chuột bọ nó gặm nhắm.<pause><scroll>
+Chi bằng cứ cất giữ nơi Thiên đàng.<scroll>
+Bố thí hỷ xả cũng là một cách để<scroll>
+cất giữ của cải nơi Thiên đàng vậy.<pause><scroll>
+Độ hạnh phúc của thí chủ đã tăng<scroll>
+<num><$03><num><$02> Rupee.<pause><scroll>
+Thí chủ đã bố thí cả thảy <num><$01><num><$00> Rupee.<scroll>
+Thí chủ đã được + thêm 1 độ hạnh<scroll>
+phúc.Nghèo mà hạnh phúc là đây.<end>
+
+//Ptr93
+#W24($1F01B9)
+<text_spd><$02>
+Hỡi cậu bé công chính có lòng hỷ<line>
+xả.Hỷ là vui mừng,hoan hỷ.Xả là<line>
+từ bỏ.<pause>Hỷ xả là vui vẻ mà từ bỏ vật<scroll>
+chất tiền bạc,không luyến tiếc<scroll>
+không tham luyến.<pause><scroll>
+Do cậu có lòng hỷ xả nên ta sẽ<scroll>
+ban thưởng cho cậu.<pause><scroll>
+Cậu muốn nhận thứ gì nào?<scroll>
+<migi>Muốn có thêm bom<scroll>
+  Muốn có thêm mũi tên<force_end><end>
+  
+//Ptr94
+#W24($1F01BC)
+<text_spd><$02>
+Nguyện ước của cậu sẽ thành tựu.<line>
+Từ nay cậu sẽ mang được <num><$01><num><$00><line>
+quả bom.Đây là hạnh phúc nhỏ nhoi<scroll>
+mà ta có thể mang lại cho cậu.<end>
+
+//Ptr95
+#W24($1F01BF)
+<text_spd><$02>
+Nguyện ước của cậu sẽ thành tựu.<line>
+Từ nay cậu sẽ mang được <num><$01><num><$00><line>
+mũi tên.Đây là hạnh phúc nhỏ nhoi<scroll>
+mà ta có thể mang lại cho cậu.<end>
+
+//Ptr96
+#W24($1F01C2)
+<text_spd><$02>
+Ta xin lỗi,ta không thể làm được<line>
+gì hơn cho cậu nữa...Ta xin lỗi.<pause><scroll>
+Thay vào đó,ta sẽ giới thiệu cậu<scroll>
+với các bạn bè của mình,hỡi cậu<scroll>
+bé dễ thương ở thác Nguyện ước!<pause><scroll>
+Và ta sẽ trả lại toàn bộ số Rupee<scroll>
+mà cậu đã bố thí hỷ xả.<pause>Vì cậu<scroll>
+có lòng hỷ xả,không tham luyến<scroll>
+tiền tài vật chất nên ắt sẽ được<scroll>
+hạnh phúc mà không cần ta chúc<scroll>
+phúc...<end>
+
+//Ptr97
+#W24($1F01C5)
+<text_spd><$02>
+Hãy chú ý bước chân.Trên sàn có<line>
+lỗ đấy.Hãy đi sang phía bên hữu.<pause><line>
+Mà cậu trẻ nhỉ.Cậu cũng đang đi<scroll>
+tìm "sức mạnh Hoàng kim" mà vào<scroll>
+ngọn núi này sao?<pause><scroll>
+Phía trước là ngọn núi của yêu<scroll>
+quái.<pause>Vô số người vì đi tìm "sức<scroll>
+mạnh Hoàng kim" mà vào trong núi<scroll>
+này rồi biệt tích.<pause><scroll>
+Lão không nói gỡ đâu,nhưng tốt<scroll>
+nhất là cậu đừng vào sâu làm gì...<end>
+
+//Ptr98
+#W24($1F01C8)
+Ồ,đáng lý trong cái chĩnh đó phải<line>
+có trái tim chứ nhỉ.<end>
+
+
+//Ptr99
+#W24($1F01CB)
+<text_spd><$02>
+Từ đây rẽ phải là được...Mà lão đây<line>
+cũng có đứa cháu gái trạc tuổi cậu.<pause><scroll>
+Nó bị Quốc vương bắt vào thành rồi<line>
+từ đó không trở về....<pause><scroll>
+Chắc chắn chuyện đem con gái nhà<scroll>
+lành đi hiến tế là do tên tư tế<scroll>
+bày trò!<pause>Hắn muốn dùng sức mạnh<scroll>
+của những cô gái thừa hưởng sức<scroll>
+mạnh của 7 vị Hiền giả,những người<scroll>
+đã phong ấn ma pháp trận...<end>
+
+//Ptr9A
+#W24($1F01CE)
+<text_spd><$02>
+Không biết là vị đại hiệp phương<line>
+nào,nhưng nếu định đi vào trong<line>
+núi thì dẫn lão theo được không?<pause><scroll>
+Lão đánh mất ngọn đèn rồi,thân<scroll>
+già này chẳng biết xoay sở ra sao<scroll>
+nơi tăm tối.<end>
+
+//Ptr9B
+#W24($1F01D1)
+<text_spd><$02>
+Những cô gái bị bắt làm vật hiến<line>
+tế hiện vẫn còn sống.<pause><scroll>
+Lão vẫn tin rằng "Dũng sĩ" sẽ<line>
+xuất hiện để cứu các vị ấy...<pause><scroll>
+Ồ lão lại lỡ mồm nói quá nhiều<scroll>
+chuyện rồi.Mà dù sao cũng cảm ơn<scroll>
+cậu đã giúp cái thân già này.<pause><scroll>
+Ah đúng rồi,khi cậu lạc lối trong<scroll>
+ma pháp trận thì hãy soi chiếu<scroll>
+bản thân trong cái gương này.<end>
+
+//Ptr9C
+#W24($1F01D4)
+<text_spd><$02>
+Chắc chắn là Quốc vương đã bị tên<line>
+tư tế dối gạt.Hắn ta toan mở lối<line>
+thông với hành lang ma lực.<pause><scroll>
+Trên đỉnh ngọn núi này có món bảo<scroll>
+vật gọi là ngọc trai mặt trăng,<scroll>
+tức Moon Pearl.<pause><scroll>
+Cậu hãy đi tìm nó.Và lão chỉ có<scroll>
+thể làm một điều duy nhất cho cậu<scroll>
+là chữa lành mọi vết thương...<pause><scroll>
+Khi nào cậu mệt mỏi thì hãy tìm<scroll>
+đến đây.<end>
+
+//Ptr9D
+#W24($1F01D7)
+<text_spd><$02>
+Viên ngọc trai Moon Pearl chính là<line>
+lá bùa bảo vệ Dũng sĩ,người tiến<line>
+về Thánh vực.<pause><scroll>
+Sức mạnh của nó sẽ bảo vệ chàng<scroll>
+khỏi ma lực biến con người thành<scroll>
+hình dạng của yêu quái.<pause><scroll>
+Cậu đã lấy được nó thì cậu chính<scroll>
+là Dũng sĩ mà lão đang chờ đợi.<pause><scroll>
+Xin cậu hãy cứu lấy con gái lão!<scroll>
+Và điều duy nhất mà lão có thể làm<scroll>
+cho cậu chính là chữa lành mọi<scroll>
+vết thương...<pause><scroll>
+Khi nào cậu mệt mỏi thì hãy tìm<scroll>
+đến đây.<end>
+
+//Ptr9E
+#W24($1F01DA)
+<text_spd><$02>
+Ồ <name> đó à.Có vẻ như gã tư tế<line>
+đã mở được lối thông sang 2 thế<line>
+giới ở khu vực quanh thành Hyrule.<pause><scroll>
+Nếu cậu muốn đến cõi bóng tối thì<scroll>
+hãy tiến về thành Hyrule.<pause><scroll>
+Và điều duy nhất mà lão có thể làm<scroll>
+cho cậu chính là chữa lành mọi<scroll>
+vết thương...<pause><scroll>
+Khi nào cậu mệt mỏi thì hãy tìm<scroll>
+đến đây.<end>
+
+//Ptr9F
+#W24($1F01DD)
+Hừm...Thằng con ta là đứa thích<line>
+thổi sáo,mà từ khi nó đi tìm "sức<line>
+mạnh hoàng kim" thì chả thấy về...<pause><scroll>
+Chẳng biết là nó đang làm gì ở<scroll>
+đâu nữa...<scroll>
+Hừm...hừm...~<end>
+
+//PtrA0
+#W24($1F01E0)
+<text_spd><$02>
+...Hừm...Đây là cái Ocarina của<line>
+con trai ta đây mà...!Hóa ra cậu<line>
+gặp nó rồi à!<pause><scroll>
+Vậy sao...Thôi,chẳng cần nói gì<scroll>
+đâu.Nhìn mặt cậu là ta hiểu rồi.<pause><scroll>
+Mà cậu hãy cứ giữ lấy cái Ocarina<scroll>
+đó được không...<pause><scroll>
+Và hãy thổi cho dân làng này nghe<scroll>
+âm sắc Ocarina thay cho con trai<scroll>
+ta nhé...<pause><scroll>
+Ta cầu xin cậu...Hãy làm ơn...<scroll>
+Nếu cậu đồng ý thì hẳn con trai<scroll>
+ta sẽ vui mừng lắm...<pause><scroll>
+...Nhưng mà...Ta cũng muốn gặp<scroll>
+lại thằng con một lần nữa...<end>
+
+//PtrA1
+#W24($1F01E3)
+<text_spd><$02>
+Cậu hãy cứ giữ lấy cái Ocarina<line>
+đó được không...<pause><line>
+Và hãy thổi cho dân làng này nghe<scroll>
+âm sắc Ocarina thay cho con trai<scroll>
+ta nhé...<pause><scroll>
+Ta cầu xin cậu...Hãy làm ơn...<scroll>
+Nếu cậu đồng ý thì hẳn con trai<scroll>
+ta sẽ vui mừng lắm...<pause><scroll>
+...Nhưng mà...Ta cũng muốn gặp<scroll>
+lại thằng con một lần nữa...<end>
+
+//PtrA2
+#W24($1F01E6)
+Gwhaaaa~<line>
+... ... ...<line>
+Gwa hwaaa~<end>
+
+//PTRA3
+#W24($1F01E9)
+Ái chà <name> đó hả.Thiên hạ đồn<line>
+là cháu bắt cóc Vương nữ nhưng mà<line>
+bà tin cháu không có làm vậy đâu.<end>
+
+//PTRA4
+#W24($1F01EC)
+Bó tay!Chân tay bé tẹo thế kia<line>
+thì bắt cóc Vương nữ kiểu gì...<line>
+Phải sớm tìm ra thủ phạm thôi.<pause><scroll>
+Nhưng mà chân cẳng cũng nhanh<scroll>
+nhảu đấy.Thỉnh thoảng cứ chạy<scroll>
+húc vào mọi thứ xem sao...<pause><scroll>
+Trong làng làng này có nhiều<scroll>
+thứ hay ho để cậu húc vào lắm.<scroll>
+Cứ thử xem.<end>
+
+//PtrA5
+#W24($1F01EF)
+Chú mày ngó nghiêng đâu vậy?<line>
+Đang chạy thi mà có thì giờ ngó<line>
+linh tinh à!<end>
+
+//PtrA6
+#W24($1F01F2)
+Ta nhường lại mảnh trái tim<line>
+cho người khoác áo choàng.<end>
+
+//PtrA7
+#W24($1F01F5)
+Ta rủa cho tai ách ập xuống đầu<line>
+kẻ nào dám ném đồ vào cái ao này!<end>
+
+//PtrA8
+#W24($1F01F8)
+Phía Bắc là rừng Đầu lâu.<line>
+Phía Nam là làng của kẻ lạc lối.<end>
+
+//PtrA9
+#W24($1F01FB)
+Phía Đông có hang động.<end>
+
+//PtrAA
+#W24($1F01FE)
+Phía Đông là thần điện bóng tối.<end>
+
+//PtrAB
+#W24($1F0201)
+Phía Tây là hiệu bán bom đạn.<end>
+
+//PtrAC
+#W24($1F0204)
+Phía Tây là ao Ác ma.<line>
+Không có lối vào mà cũng<line>
+chẳng có đường ra.<end>
+
+//PtrAD
+#W24($1F0207)
+Làng của kẻ lạc lối.<line>
+Miễn tiếp kẻ không có Rupee.<end>
+
+//PTRAE
+#W24($1F020A)
+Còn một chút nữa là tới<line>
+thác Nguyện ước.<end>
+
+//PTRAF
+#W24($1F020D)
+Phía Đông Bắc là<line>
+ao Tai ách.<end>
+
+//PtrB0
+//ふう、司際のアグニムが来てか<line>
+//ら、みんなどうかしちまったみ<blank>
+//たいだ。おれもああなるのかな<end>
+#W24($1F0210)
+<color><$06>
+Hừm,từ khi gã tư tế Agnim tới đây<line>
+thì mọi người cứ như bị sao ấy nhỉ.<line>
+Ta cũng khổ tâm quá đi.<end>
+
+//Ptrb1
+#W24($1F0213)
+<color><$06>
+Hêêê!<line>
+Con nít không được vào thành!<line>
+Về nhà ngủ đi nhóc con!<end>
+
+//PtrB2
+#W24($1F0216)
+<frame_type><$02><text_spd><$01>
+Này <name>,ta là Trưởng lão<line>
+Sahasrahla đây.Ta có lời này muốn<line>
+giúp con.<pause><scroll>
+Nếu con muốn lấy báu vật trong<scroll>
+thần điện này thì hãy đánh bại con<scroll>
+yêu quái mặc giáp cứng.<pause><scroll>
+Nhất định khi đó con sẽ tìm thấy<scroll>
+báu vật.<end>
+
+//PtrB3
+#W24($1F0219)
+<frame_type><$02><text_spd><$01>
+Này <name>,ta là Trưởng lão<line>
+Sahasrahla đây.<pause><line>
+Trên ngọn tháp này có món bảo bối<scroll>
+là viên ngọc trai mặt trăng,Moon<scroll>
+Pearl.<pause>Người nào mang viên ngọc<scroll>
+trai này thì sẽ giữ được nguyên<scroll>
+hình dạng ở thế giới của yêu quái.<pause><scroll>
+Nó sẽ bảo vệ con.Nhất định đừng<scroll>
+quên vào tháp mà tìm nó...<end>
+
+//PtrB4
+#W24($1F021C)
+SEP #$10  REP #$20  LDY #$8000<line>
+LDA #$7E  PHA  PLB LDA #$FF<line>
+STA $00,y  DEC $00  BNE $F3  RTS<pause><scroll><scroll><scroll><line>
+<text_spd><$02>
+Hình như là văn tự cổ của dân<line>
+Hylia ngày xưa.Giờ còn ai đọc<line>
+được thứ văn tự này không nhỉ?<end>
+
+//PtrB5
+#W24($1F021F)
+<text_spd><$02>
+Cổ văn tự này viết:<line>
+Khi "tai ách nặng nề" gieo xuống,<line>
+có vị "Dũng sĩ" mang 3 biểu tượng<scroll>
+tìm đến nơi đây.<pause><scroll>
+Hẳn là đôi tay chàng sẽ nhổ được<scroll>
+thanh gươm này.Đó là người thừa<scroll>
+hưởng dòng máu của tộc Kỵ sĩ.<end>
+
+//PtrB6
+#W24($1F0222)
+<frame_type><$02><text_spd><$01>
+Này <name>,hãy lắng nghe những lời<line>
+chân thật từ ta,Trưởng lão<line>
+Sahasrahla.<pause><scroll>
+Hãy leo lên tảng đá mắt kính.<pause><scroll>
+Có như vậy con mới đến được ngọn<scroll>
+tháp trên núi Hebra này.<pause><scroll>
+Con hãy nghĩ kỹ về điều này.<end>
+
+//PtrB7
+#W24($1F0225)
+<frame_type><$02><text_spd><$01>
+Này <name>,hãy nghe cho kỹ.Vạn vật<line>
+trong cõi ánh sáng và bóng tối đều<line>
+có hình trạng giống nhau.<pause><scroll>
+Nếu biết được hình trạng của một<scroll>
+vật ở một cõi thì sẽ biết được hình<scroll>
+trạng của nó ở cõi còn lại.<pause><scroll>
+Con hãy nghĩ kỹ về điều này.<end>
+
+//PtrB8
+#W24($1F0228)
+<frame_type><$02>
+<name>...Là ta đây,Zelda đây...<line>
+Đừng để huyễn thuật của tên đạo<line>
+tặc Blind mê hoặc cậu.<pause><scroll>
+Hãy cẩn thận.<end>
+
+//PtrB9
+#W24($1F022B)
+<frame_type><$02><text_spd><$01>
+Này <name>,là ta đây,Trưởng lão<line>
+Sahasrahla đây.<pause><scroll>
+Hãy thắp sáng 4 ngọn đèn,đường đi<scroll>
+ắt sẽ mở ra.Hãy tự soi sáng đường<scroll>
+con đi.<end>
+
+//PtrBA
+#W24($1F022E)
+REP #$10 PHA PHX PHY PHD PHB PHP<line>
+SEP #$20  LDA $4210  LDA #$00<line>
+PHA  PLB  LDA $10  BEQ $A0<pause><scroll>
+LDA #$FF  STA $10  LDY #$0000<scroll>
+LDA #$30  STA $00  LDA #$5A<scroll>
+STA $01  LDA <$88>$00<$89>,y  STA $7F1A23<pause><scroll>
+REP #$20  PLP  PLB  PLD  PLY  PLX<scroll>
+PLA  RTI<pause><scroll><scroll><scroll><line>
+<text_spd><$02>
+Có vẻ như đây là cổ ngữ của vùng<line>
+Hyrule này.Làm sao để đọc hiểu nó<line>
+đây...<end>
+
+//PtrBB
+#W24($1F0231)
+<text_spd><$02>
+Hãy đứng trước bia đá này mà<line>
+đọc.Dùng niệm lực để truyền đạt<line>
+ước nguyện,mở ra con đường...<end>
+
+//PtrBC
+#W24($1F0234)
+<frame_type><$02><text_spd><$01>
+Sau khi làm Ganon bất động thì<line>
+con hãy dùng "mũi tên bạc" để kết<line>
+liễu hắn.Hãy nhớ đấy <name>...<end>
+
+//PtrBD
+#W24($1F0237)
+<frame_type><$02><text_spd><$01>
+<name>...Cậu có nghe thấy tiếng ta<line>
+không?Ta là Zelda đây.<pause><line>
+Bây giờ ta đang bị giam trong<scroll>
+tảng đá hình rùa trên núi Tử vong.<pause><scroll>
+Ta vẫn tin rằng nhất định cậu sẽ<scroll>
+tìm đến...<end>
+
+//PtrBE
+#W24($1F023A)
+<frame_type><$02><text_spd><$01>
+Này <name>,ta là Sahasrahla đây.<line>
+Nhất định con phải lấy hết tất cả<line>
+bảo bối trong từng căn phòng của<scroll>
+yêu quái.Hãy nhớ đấy.<end>
+
+//PtrBF
+#W24($1F023D)
+<frame_type><$02><text_spd><$01>
+Này <name>,hãy nghe ta nói.<line>
+Dù con có cầm Master-sword cũng<line>
+không chém được thân xác của gã<scroll>
+tư tế đâu.<pause><scroll>
+Hãy lợi dụng ma lực của hắn mà<scroll>
+gây sát thương cho hắn.<end>
+
+//PtrC0
+#W24($1F0240)
+<frame_type><$02><text_spd><$01><color><$05>
+Này <name>,chớ có sử dụng hết<line>
+ma lực của con.<pause>Nếu không mang<line>
+theo thuốc ma pháp thì nên thận<scroll>
+trọng khi tiến vào trong...<pause><scroll>
+Con không cần phải cố...<end>
+
+//PtrC1
+#W24($1F0243)
+<frame_type><$02><text_spd><$01>
+Này <name>,con có mang theo thuốc<line>
+hồi phục ma pháp không?<pause><line>
+Nếu không mang theo thì con không<scroll>
+thể tiến thêm được đâu.<end>
+
+//PtrC2
+#W24($1F0246)
+<frame_type><$02><text_spd><$01>
+Này <name>,2 ngọn lửa lớn sẽ bảo<line>
+vệ con nơi này...<end>
+
+//PtrC3
+#W24($1F0249)
+<frame_type><$02><text_spd><$01>
+<name>,con không thể đánh bại<line>
+kiếm sĩ đầu lâu chỉ với thanh kiếm.<pause><scroll>
+Hãy kết liễu khi hắn đổ xuống.<end>
+
+//PtrC4
+#W24($1F024C)
+<frame_type><$02><text_spd><$01>
+Này <name>,là ta đây.Trưởng lão<line>
+Sahasrahla đây.Để ta nói con biết.<pause><scroll>
+Chỉ cần sử dụng chiếc gương ma<line>
+trong thành trì của yêu quái thì<scroll>
+con có thể quay lại cửa ra bất cứ<scroll>
+lúc nào.Đừng quên đấy.<end>
+
+//PtrC5
+#W24($1F024F)
+Đây là căn phòng bí mật.<line>
+Nhớ giữ bí mật,đừng cho ai biết<line>
+nghe chưa.<end>
+
+//PtrC6
+#W24($1F0252)
+<name> bắt được con ong.Làm gì đây?<line>
+<migi>Nhốt nó vào lọ<line>
+  Thả nó đi<force_end><end>
+  
+//PtrC7
+#W24($1F0255)
+<name> bắt được tinh linh.<line>
+<migi>Nhốt vào lọ<line>
+  Phóng sinh thôi<force_end><end>
+  
+//PtrC8
+#W24($1F0258)
+<name> không có cái lọ rỗng nào.<line>
+Thôi đành thả nó đi vậy...Thể hiện<line>
+cái đức hiếu sinh của trời đất.<end>
+
+//PtrC9
+#W24($1F025B)
+Vừa rồi nhóc chạy mất<line>
+<num><$03><num><$02> phút <num><$01><num><$00> giây.<end>
+
+//PtrCA
+#W24($1F025E)
+Nhóc mà chạy tới đích trong 15<line>
+giây thì chị có thưởng.Bắt đầu~~<line>
+... ... ...Chạy!<end>
+
+//PtrCB
+#W24($1F0261)
+Đậu ~!<line>
+Chúc mừng nhóc!<line>
+Phần thưởng là 1 mảnh trái tim!<end>
+
+//PtrCC
+#W24($1F0264)
+Tạch~!<line>
+Tiếc quá,mà thôi lần sau<line>
+cứ thử lại nếu thích!<end>
+
+//PtrCD
+#W24($1F0267)
+Trời,hết phần thưởng rùi~<line>
+Xin lỗi nhóc nhé!<end>
+
+//PtrCE
+#W24($1F026A)
+Phải đi vô từ cửa chính cho đàng<line>
+quàng!Không thì làm sao đếm được<line>
+thời gian đây...<end>
+
+//PtrCF
+#W24($1F026D)
+Này cậu,có cần cái bình ma thuật<line>
+không?Cái gì nó cũng chứa được.<line>
+Chỉ 100 Rupee thôi,hời quá.<pause><scroll>
+Muốn mua không?<scroll>
+<migi>Mua<scroll>
+  Không mua<force_end><end>
+
+//PtrD0
+#W24($1F0270)
+Cảm ơn nhiều nhé.<line>
+Cứ đội lên đầu là được!<end>
+
+//PtrD1
+#W24($1F0273)
+Ái chà tiếc quá~<line>
+Đi cày đủ Rupee rồi hẳn<line>
+quay lại mua nhé.<end>
+
+//PtrD2
+#W24($1F0276)
+Tui bán hết bình rồi.<line>
+Lần khác lại đến nhé.<line>
+... ... ...<end>
+
+//PtrD3
+#W24($1F0279)
+Ái chà chà~Con ong này hiếm<line>
+có khó kiếm đây.Cậu bán tui<line>
+100 Rupee hén.<end>
+
+//PtrD4
+#W24($1F027C)
+Ái chà chà~Trong số đồ ăn thì<line>
+ăn cá là ngon nhứt bổ dưỡng<line>
+lành mạnh nhứt.Để tui mua.<end>
+
+//PtrD5
+#W24($1F027F)
+Hể <name> đó à!Hơi hẻo tí nhưng<line>
+mà chiện di nhứt tui làm được<line>
+cho cậu là thứ này đây.<end>
+
+//PtrD6
+#W24($1F0282)
+Lại là nhóc đó à!<line>
+Tới chơi với ta à?<pause><line>
+Cần ta làm gì thì cứ nói,<scroll>
+đừng ngại gì cả.<pause><scroll>
+Cậu nhóc cần ta làm gì?<scroll>
+<migi>Nhờ ông rèn kiếm<scroll>
+  Ghé thăm ông tí thôi<force_end><end>
+  
+//PtrD7
+#W24($1F0285)
+Để ta giảm giá cho cậu!<line>
+<migi>Kiếm....10 Rupee<line>
+  Đợi đã<force_end><end>
+  
+//PtrD8
+#W24($1F0288)
+Chỉ cần ta rèn kiếm thôi á?<line>
+<migi>Đúng rùi<line>
+  Đợi đã<force_end><end>
+  
+//PtrD9
+#W24($1F028B)
+Hừm...giờ không thể rèn cho<line>
+nó mạnh hơn được đâu...<line>
+Ta xin lỗi...<end>
+
+//PtrDA
+#W24($1F028E)
+Chú nhóc có thể tới đây chơi<line>
+Bất cứ lúc nào!<line>
+Một hai! Dô ta!<end>
+
+//PtrDB
+#W24($1F0291)
+Nhóc cởi bỏ kiếm ra rồi<line>
+để đó cho ta một lát!<end>
+
+//PtrDC
+#W24($1F0294)
+Đây,ta rèn xong kiếm cho nhóc<line>
+rồi nè!Đeo vô thử coi!<end>
+
+//PtrDD
+#W24($1F0297)
+<text_spd><$01>
+Tên phụ tá của ta tự dưng bỏ đi<line>
+đâu mất dạng.Hắn mà không mò về<line>
+thì ta chẳng rèn kiếm cho ai được...<end>
+
+//PtrDE
+#W24($1F029A)
+<text_spd><$01>
+Sao!Cậu tìm thấy tên phụ tá của<line>
+ta rồi hả?<pause><line>
+...Vui quá...<pause><scroll>
+Lần sau lại đến chỗ ta chơi nhé!<scroll>
+Lúc đó ta sẽ rèn thanh kiếm mới<scroll>
+cho cậu.<end>
+
+//PtrDF
+#W24($1F029D)
+<text_spd><$01>
+Ộp ộp!Cậu không bị thay hình đổi<line>
+dạng à?Thứ dữ đó à nghen.<line>
+Đúng hơm?Tui nói đúng hơm?<pause><scroll>
+Tui từng là người ở làng Kakariko<scroll>
+đây nè.Mà nói mới nhớ giờ chả<scroll>
+biết ông bạn tui giờ đang làm gì.<pause><scroll>
+Haizz,cậu làm ơn dẫn tui đi gặp<scroll>
+lại ông bạn với.Làm ơn đi ộp ộp!<end>
+
+//PtrE0
+#W24($1F02A0)
+Xin lỗi.<line>
+Đợi ít lâu nữa hẳn tới.<end>
+
+//PtrE1
+#W24($1F02A3)
+Cảm ơn!<line>
+Cảm ơn nhé!<end>
+
+//PtrE2
+#W24($1F02A6)
+Này này nhóc con!Đừng có quay<line>
+búa qua mắt thợ!Đừng có quấy<line>
+nhiễu ta!<end>
+
+//PtrE3
+#W24($1F02A9)
+<text_spd><$02>
+Từ khi tớ lọt vào cõi này thì<line>
+bộ dạng thành ra thế này đây...<pause><line>
+Khi còn ở thế giới cũ thì tớ rất<scroll>
+hay thổi sáo chơi...<pause><scroll>
+... ... ...<scroll>
+Ôi nhớ ghê,cái quảng trường nhỏ<scroll>
+nơi tớ ngồi với lũ động vật...<pause><scroll>
+Ah,tớ cũng có chôn cái Ocarina<scroll>
+cùng với mầm hoa xuống đất.<pause><scroll>
+Cậu thử tìm lại nó giúp tớ nhé?<scroll>
+<migi>Được thôi.<scroll>
+  Không rảnh<force_end><end>
+  
+//PtrE4
+#W24($1F02AC)
+<text_spd><$02>
+Vậy tớ đưa cậu cái xẻng này...<line>
+Làm ơn tìm lại nó giúp tớ!<end>
+
+//PtrE5
+#W24($1F02AF)
+<text_spd><$02>
+... ... ...<line>
+Vậy thôi.Tớ hiểu rồi!<line>
+Chào cậu!<end>
+
+//PtrE6
+#W24($1F02B2)
+<text_spd><$02>
+Cậu tìm thấy cái Ocarina chưa?<line>
+... ... ... ...<line>
+Mau tìm nó giúp tớ.<end>
+
+//PtrE7
+#W24($1F02B5)
+<text_spd><$02>
+Cảm ơn <name>...Cậu tìm thấy rồi à.<line>
+Nhưng mà tớ không còn thổi<line>
+nó được nữa rồi.<pause><scroll>
+Tớ muốn cậu giữ nó giúp tớ.<scroll>
+Và nếu có tới ngôi làng tớ từng<scroll>
+sống thì hãy đưa nó cho ông cụ<scroll>
+tớ nhé.Ông ấy toàn ngủ gật thôi.<pause><scroll>
+Trời ơi,đầu óc tớ mơ hồ rùi...<scroll>
+Làm ơn,hãy cho tớ nghe tiếng<scroll>
+Ocarina cuối cùng đi...<end>
+
+
+//PtrE8
+#W24($1F02B8)
+<text_spd><$01>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<line>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Đầu tiên hãy đi tìm Trưởng lão<scroll>
+Sahasrahla cái đã~<pause><scroll>
+Đúng nhận sai cãi giúp thầy~<end>
+
+//PtrE9
+#W24($1F02BB)
+<text_spd><$01>
+Thiên linh linh địa linh linh....<line>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<scroll>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Hãy dùng cuốn sách Thủ ấn ở cổng<scroll>
+làng để mở ra lối vào sa mạc~<pause><scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+//PtrEA
+#W24($1F02BE)
+<text_spd><$01>
+Án ma ni bát rị hồng,ác ma thối<line>
+tán,thất phúc tất sinh thất nạn<line>
+tất diệt!<pause><scroll><scroll><scroll><line>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<line>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Tử tôn của Thất hiền giả có người<scroll>
+ẩn cư trong sa mạc.<pause><scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+//PtrEB
+#W24($1F02C1)
+<text_spd><$01>
+Lâm binh đấu giả giai trận liệt<line>
+tại tiền!Suzuki bút bi bút máy!<line><pause><scroll><scroll><scroll><line>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<line>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Hãy mang cây nấm trong rừng đến<scroll>
+cửa hiệu ma pháp ở phía Bắc thần<scroll>
+điện.Đúng nhận sai cãi giúp thầy~<end>
+
+#JMP($1A8000)
+//PtrEC
+#W24($1F02C4)
+<text_spd><$01>
+Bất ưng trụ sắc sinh tâm,bất ưng<line>
+trụ thanh,hương,vị,xúc,pháp sinh<line>
+tâm,ưng vô sở trụ nhi sinh kỳ tâm.<pause><scroll><scroll><scroll><line>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<line>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Cứ đi lần theo ven sông sẽ tới cái<scroll>
+hồ nơi bọn Zöra sinh sống.<pause><scroll>
+Đúng nhận sai cãi giúp thầy~<end>
+
+//PtrED
+#W24($1F02C7)
+<text_spd><$01>
+Yết đế yế đế,ba la yết đế,ba la<line>
+tăng yết đế,Bodhi Svaha!<line><pause><scroll><scroll><scroll><line>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<line>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Trên ngọn tháp nơi núi cao có món<scroll>
+bảo vật Moon Pearl.Kẻ xứng đáng<scroll>
+hãy đến mà thỉnh về~<pause><scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+//PtrEE
+#W24($1F02CA)
+<text_spd><$01>
+Án ma ni a rị da,Ma ha a rị da<line>
+a du già ba la tần bà sa la.Án ma<line>
+rị đa a du già đa la tát bà ha!<pause><scroll><scroll><scroll><line>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<line>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Thanh kiếm Master-sword vốn chẳng<scroll>
+phải là thứ để đả kích thể xác của<scroll>
+tư tế~.<scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+//PtrEF
+#W24($1F02CD)
+<text_spd><$01>
+Bồ đề bản vô thụ,minh kính diệc<line>
+phi đài,bản lai vô nhất vật,hà xứ<line>
+nhạ trần ai~<pause><scroll><scroll><scroll><line>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<line>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Hãy nhảy xuống cái giếng trước cửa<scroll>
+nhà thợ rèn,ắt nhặt được bí kiếp<scroll>
+võ công chí cao vô thượng!<pause><scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+//PtrF0
+#W24($1F02D0)
+<text_spd><$02>
+Hừm hôm nay thầy mệt mỏi quá.<line>
+Hôm khác cháu hãy ghé nhé.<end>
+
+//PtrF1
+#W24($1F02D3)
+<text_spd><$02>
+Ồ,trên mặt cháu hiện đủ điềm dữ...<line>
+Nào,để thầy bói cho một quẻ nhé.<pause><line>
+An tâm đi,chỗ thầy xem uy tín chứ<scroll>
+không phải hạng vớ vẩn mê tín dị<scroll>
+đoan.<pause>Quan chức thập phương đều<scroll>
+nườm nượp đổ về xếp hàng đợi thầy<scroll>
+xem cho đấy...<pause><scroll>
+Để thầy demo một phát nhé.<scroll>
+Nhà cháu tên là <name>,bố mẹ mất<scroll>
+sớm,dòng họ ăn ở có đức.<pause> <scroll>
+Trong nhà có 3 cái lọ và 1 cái hòm.<scroll>
+Theo phong thủy là bố trí chuẩn<scroll>
+ngũ hành,vượng khí đời đời.<pause><scroll>
+Thầy nhìn thấy vượng khí nhà cháu<scroll>
+còn kéo đến tận sau năm 2023 cơ.<pause><scroll>
+Mà cháu phải biết tu thân tích đức<scroll>
+mới mong hưởng phúc lâu bền.<pause><scroll>
+Chớ có hành hạ gà qué,chớ có<scroll>
+ném đồ vào người vô can.<scroll>
+Đúng nhận sai cãi giúp thầy.<pause><scroll>
+Thế nào,xem một quẻ nhé?<pause><scroll>
+<migi>Xem ngay và luôn!<scroll>
+  Không tiếp tay mê tín dị đoan!<force_end><end>
+
+//PtrF2
+#W24($1F02D6)
+<text_spd><$01>
+Vậy thầy xin nhận <num><$00><num><$01> Rupee nhé.<line>
+Giờ nom mặt cháu có vận khí hơn<line>
+trước rồi đấy.<pause>Đúng nhận sai cãi<scroll>
+giúp thầy.Và nhớ lần sau ghé lại<scroll>
+chỗ thầy nhá.Thầy chỉ gieo quẻ chứ<scroll>
+không giở quẻ đâu.<end>
+
+//PtrF3
+#W24($1F02D9)
+<text_spd><$02>
+Vậy à.Tiếc quá...<line>
+Thế thì để lần sau vậy.<end>
+
+//PtrF4
+#W24($1F02DC)
+<text_spd><$02>
+Này cậu,có biết gì không~~<line>
+Quanh sa mạc Huyễn hoặc có<line>
+thứ gì đó dựng đứng~<end>
+
+//PtrF5
+#W24($1F02DF)
+<text_spd><$01>
+Án ma ni Suzuki bút bi bút máy~<pause><scroll>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<line>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Hãy đi hỏi tên bán tin sống trong<scroll>
+hang ở cõi bóng tối~<pause><scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+
+//PtrF6
+#W24($1F02E2)
+<text_spd><$01>
+Thiên linh linh địa linh linh,<line>
+chợ tình Tây Bắc có gái rất xinh~<pause><scroll>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<scroll>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Trợ thủ của tay thợ rèn hiện đang<scroll>
+ở trong làng của những kẻ lạc lối.<scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+//PtrF7
+#W24($1F02E5)
+<text_spd><$01>
+Trời sinh ông Tú Cát,đất nứt<line>
+con bọ hung!Lợn cấn ăn cám tốn!<pause><line>
+Vô cực sinh thái cực~<scroll>
+Thái cực sinh lưỡng nghi~<scroll>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Có 1 món bửu bối đang say ngủ ở<scroll>
+nghĩa địa của thế giới ánh sáng~<scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+//PtrF8
+#W24($1F02E8)
+<text_spd><$01>
+Người giàu lên Thiên đàng còn khó<line>
+hơn con lạc đà chui lỗ kim!<pause><line>
+Vô cực sinh thái cực~<scroll>
+Thái cực sinh lưỡng nghi~<scroll>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Có khi tay chủ hiệu bán lựu đạn<scroll>
+có hàng mới~<pause><scroll>
+Đúng nhận sai cãi giúp thầy.<end>
+
+//PtrF9
+#W24($1F02EB)
+<text_spd><$01>
+Rin Pyō Tō Sha Kai Jin Retsu<line>
+Zai Zen!Omae wa mō shindeiru!<pause><scroll>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<scroll>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Bên trong kim tự tháp ở thế giới<scroll>
+âm ty có thứ chi đó~<scroll>
+Đúng nhận sai cãi giúp thầy!<end>
+
+//PtrFA
+#W24($1F02EE)
+<text_spd><$01>
+Hocus pocus, abracadabra, alakazam!<line>
+Sim sala bim mojo Umbasa!<pause><scroll>
+Vô cực sinh thái cực~<line>
+Thái cực sinh lưỡng nghi~<scroll>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Tháp Ganon được kết giới của núi<scroll>
+Tử vong bảo vệ~<scroll>
+Đúng nhận sai cãi giúp thầy!<end>
+
+//PtrFB
+#W24($1F02F1)
+<text_spd><$01>
+Fithos Lusec Wecos Vinosec!<line>
+Excitate vos e somno, liberi mei<line>
+Cunae non sunt!<pause><scroll>
+Vô cực sinh thái cực~<scroll>
+Thái cực sinh lưỡng nghi~<scroll>
+Lưỡng nghi sinh tứ tượng~<pause><scroll>
+... ... ...<scroll>
+Càn khôn tốn chấn cấn ly đài khảm,<scroll>
+quẻ bảo rằng như vầy:<pause><scroll>
+Để kết liễu được Ganon thì cần<scroll>
+phải có "mũi tên bạc".Đúng nhận<scroll>
+sai cãi giúp thầy~<end>
+
+//PtrFC
+#W24($1F02F4)
+<text_spd><$02>
+Chú mày cho anh 20 Rupee đi,anh<line>
+sẽ nói cho chú biết một tin hay...<pause><line>
+Sao hả?<scroll>
+<migi>Thí Rupee cho hắn<scroll>
+  Miễn tiếp loại này<force_end><end>
+
+//PtrFD
+#W24($1F02F7)
+<text_spd><$02>
+Hê hê cảm ơn nhé.Thật ra là ở<line>
+cái thế giới này có một con sông.<pause><line>
+Cứ đi men theo nó sẽ gặp cái ao<scroll>
+nhỏ.Chú mày thử ném gì xuống ao<scroll>
+xem nào.<pause>Mà có chuyện gì xảy ra<scroll>
+thì anh không biết đâu nhá.<pause><scroll>
+Hê hê hê hết rùi...<end>
+
+//PtrFE
+#W24($1F02FA)
+<text_spd><$02>
+Hê hê vậy hả.Mà anh đây cũng chả<line>
+hứng thú với loại nghèo kiết đâu.<line>
+Thui biến đi!<end>
+
+//PtrFF
+#W24($1F02FD)
+<text_spd><$02>
+Hê hê hê cảm ơn nhé.Thật ra ở<line>
+thế giới ánh sáng thì anh đây là<line>
+một tên đầu trộm đuôi cướp...<pause><scroll>
+Mà lúc đó anh có tên đồng bọn sợ<scroll>
+bị tóm nên bỏ chạy đâu mất.<pause><scroll>
+Hắn là tên chuyên bẻ khóa.Khóa gì<scroll>
+trên đời hắn cũng xử được nốt.<pause><scroll>
+Nhưng mà nghe đâu bây giờ hắn rửa<scroll>
+tay gác kiếm,không cho ai biết<scroll>
+chuyện xưa cả...<pause><scroll>
+Nhưng mà dĩ dãng dơ dái dễ dì<scroll>
+dấu diếm.<pause><scroll>
+Hê hê hê...Bây giờ hắn cải trang<scroll>
+thành ông chú gàn nhưng sao qua<scroll>
+mắt được anh.Hê hê hê...<end>
+
+//Ptr100
+#W24($1F0300)
+<text_spd><$02>
+Hê hê hê cảm ơn chú mày nhá.<line>
+Thật ra là anh từng nhìn thấy một<line>
+người đẹp đỉnh của chóp trong cái<scroll>
+kim tự tháp ở thế giới này.<pause><scroll>
+Nhưng mà giờ chả biết ai bít cái<scroll>
+cửa vào mất rồi.Anh dùng lựu đạn<scroll>
+thường cũng không phá được...<end>
+
+//Ptr101
+#W24($1F0303)
+<text_spd><$02>
+Hê hê hê cảm ơn chú nhá.<line>
+Thật ra cơn mưa này là do yêu quái<line>
+sống trong đầm lầy tạo ra đó.<pause><scroll>
+Nếu có sức mạnh lớn hơn sức của<scroll>
+yêu quái mà đẩy không khí đi thì<scroll>
+chắc mưa sẽ tạnh thôi.<end>
+
+
+//Ptr102
+#W24($1F0306)
+<text_spd><$02>
+Khụ khụ khụ...<line>
+Anh <name> có cái lọ đựng con<line>
+bọ hem?<pause><scroll>
+...Hem có hả? Khụ khụ.<end>
+
+//Ptr103
+#W24($1F0309)
+Em ốm quá hem ra ngoài được...<line>
+Khụ khụ...<pause><line>
+Chắc là em trúng khí độc của yêu<scroll>
+quái từ núi rừng rùi.<pause><scroll>
+Mọi người toàn bảo vậy thui...khụ...<pause><scroll>
+Em có cái vợt này để bắt bọ khi<scroll>
+khỏe lại.Mà thôi giờ tặng lại<scroll>
+cho anh luôn này.<end>
+
+//Ptr104
+#W24($1F030C)
+Haizzz. . . . . .<line>
+Em hem khỏe lại được rùi...<line>
+Khụ khụ khụ...<end>
+
+//Ptr105
+#W24($1F030F)
+. . . . . . . . . . . . . . . . . <end>
+
+//Ptr106
+#W24($1F0312)
+Tại sao. . . . . . . . . . . . .<end>
+
+//Ptr107
+#W24($1F0315)
+<text_spd><$02>
+Cậu biết là ngày xưa ta từng là<line>
+đạo chích sao?<pause><scroll>
+Thôi được rồi,ta sẽ mở rương báu<line>
+giúp cậu,nhưng phải giữ bí mật<scroll>
+không cho ai biết.<pause><scroll>
+Cậu có hứa không?<scroll>
+<migi>Hứa<scroll>
+  Không hứa<force_end><end>
+  
+//Ptr108
+#W24($1F0318)
+Vậy thì cứ vĩnh viễn trằn trọc<line>
+với cái rương báu đi.<end>
+
+//Ptr109
+#W24($1F031B)
+Đừng có nói cho ai biết hết<line>
+đó nghe...<end>
+
+//Ptr10A
+#W24($1F031E)
+Tốt.Vậy cậu cứ mang rương báu<line>
+tới đây đi...Nhớ đừng nói ai biết.<end>
+
+//Ptr10B
+#W24($1F0321)
+addiu sp, $28  subiu sp, $20<line>
+sll a1, $0F  sw a1, $10<$88>sp<$89><line>
+lw v0, $8005C390  nop  slt v0,v0,a0<pause><scroll><scroll><scroll><line><text_spd><$02>
+Lại là một thứ cổ ngữ khác của<line>
+dân Hylia à?Thời buổi này còn ai<line>
+thèm đọc thứ văn tự này nhỉ?<end>
+
+//Ptr10C
+#W24($1F0324)
+Hãy giơ cao thanh Master-sword.<line>
+Chỉ khi đó ngươi mới có được ma<line>
+pháp "Ether".<end>
+
+//Ptr10D
+#W24($1F0327)
+Hãy giơ cao thanh Master-sword.<line>
+Chỉ khi đó ngươi mới có được ma<line>
+pháp "Bomber".<end>
+
+//Ptr10E
+#W24($1F032A)
+<text_spd><$02>
+Cảm ơn nhóc đã đánh thức ta sau<line>
+một giấc ngủ dài!<pause><line>
+Đã vậy thì ta phải trả ơn mới<scroll>
+được.Chuẩn bị tinh thần đi.<scroll>
+...Đồng ý chứ?<end>
+
+//Ptr10F
+#W24($1F032D)
+<text_spd><$02>
+Khà khà...Nhìn đi!Bây giờ nhóc<line>
+chỉ tiêu tốn một nửa ma pháp so<line>
+so với trước thôi...<pause><scroll>
+Thôi tạm biệt~<scroll>
+Nhóc cố lên.Cái game này khó<scroll>
+vãi hà!<end>
+
+//Ptr110
+#W24($1F0330)
+<$FE><$6E><$00><color><$02><text_spd><$03><frame_type><$02><$FE><$67>
+Ngày xửa ngày xưa ở vùng đất<line>
+Hyrule xinh đẹp được bao phủ giữa<line>
+núi rừng...<wait><$09><scroll><scroll><scroll><line>
+Có truyền thuyết rằng bảo vật<line>
+Hoàng kim với sức mạnh toàn<line>
+tri toàn năng đang được cất giữ<scroll>
+ở đâu đó trong vùng đất này...<wait><$09><$FE><$67><$FE><$67>
+<scroll><scroll><scroll><line>
+Và rồi người ta tìm thấy ở<line>
+Vương quốc Hyrule có lối vào<line>
+Thánh địa,nơi cất giấu bảo vật<scroll>
+Hoàng kim...<wait><$07><scroll><scroll><scroll><line>
+Vô số người tranh nhau đổ<line>
+về Thánh địa rồi bặt vô âm tín. <wait><$07><scroll><scroll><scroll><line><line>
+Chẳng một ai trở về,và một<line>
+nguồn sức mạnh tà ác cũng từ<line>
+đó mà tràn ra.<wait><$09>
+<$FE><$67><$FE><$67><scroll><scroll><scroll><line>
+Thế rồi Quốc vương lệnh cho<line>
+7 vị Hiền giả phong ấn lối<line>
+vào Thánh địa...<wait><$09><$FE><$67><$FE><$67>
+<scroll><scroll><scroll><line>
+Những tưởng phong ấn vĩnh viễn<line>
+sẽ không bao giờ bị giải trừ...<line>
+ <wait><$09><scroll><scroll><scroll>
+... ...<scroll>
+Nhưng rồi,khi tất cả những chuyện<scroll>
+đó đã trở thành truyền thuyết thì<scroll>
+một ngày nọ...<end>
+
+//Ptr111
+#W24($1F0333)
+<frame_type><$02><color><$01><text_spd><$03>
+Nơi đây có gã tư tế Agnim bí ẩn<line>
+toan giải trừ phong ấn,quyết tâm<line>
+phá hoại Vương quốc...<wait><$05><end>
+
+//Ptr112
+#W24($1F0336)
+<frame_type><$02><color><$07><text_spd><$02>
+Hắn sai khiến binh lính trong thành,<line>
+bắt từng người trong số các Vương<line>
+nữ,hậu duệ của 7 vị Hiền giả<scroll>
+làm vật hiến tế.<wait><$05><end>
+
+//Ptr113
+#W24($1F0339)
+<frame_type><$02><color><$07><text_spd><$03>
+Và rồi giờ đây,định mệnh của<line>
+Vương nữ Zelda trở thành vật tế<line>
+thần cũng cũng đã đến.<wait><$05><end>
+
+//Ptr114
+#W24($1F033C)
+Nó bị khóa rồi.Kiểu gì cũng<line>
+không mở được.Thôi đành phải<line>
+mang nó theo vậy.<end>
+
+//Ptr115
+#W24($1F033F)
+Đạn đây đạn đây.30 quả giá 100<line>
+Rupee.Chỉ 100 Rupee được những 30<line>
+quả đạn.Mua đi mua đi bà con~<end>
+
+//Ptr116
+#W24($1F0342)
+Đạn đây đạn đây.30 quả giá 100<line>
+Rupee.Mua ngay lúc này khuyến mãi<line>
+thêm 1 quả kiểu mới 100 Rupee~<end>
+
+//Ptr117
+#W24($1F0345)
+Cảm ơn đã mua hàng~<line>
+Cảm ơn,vâng xin cảm ơn,<line>
+cảm ơn rất nhiều~<end>
+
+//Ptr118
+#W24($1F0348)
+Cảm ơn đã mua hàng~<line>
+Đừng quên nhấn nút A để tách<line>
+quả lựu đạn ra...<end>
+
+//Ptr119
+#W24($1F034B)
+Khẹc khẹc,cho tui 100 Rupee thì<line>
+tui sẽ mở đường vô cho.<line>
+Khẹc khẹc!Sao hả!<pause><scroll>
+Có nhờ nó mở đường không?<scroll>
+<migi>Nhờ<scroll>
+  Thôi để tự mở<force_end><end>
+  
+//Ptr11A
+#W24($1F034E)
+Khẹc khẹc!Hừm~<line>
+Vậy thôi,thích tự mở thì cứ<line>
+tự mở đi,đừng nhờ tui!<end>
+
+//Ptr11B
+#W24($1F0351)
+Khẹc khẹc!Tui nhận 100 Rupee hén!<end>
+
+//Ptr11C
+#W24($1F0354)
+<text_spd><$01>
+Khẹc khẹc!Tui là khỉ con!<line>
+Tui thích Rupee nhứt trên đời!<line>
+Cho tui xin 10 Rupee đi khẹc!<pause><scroll>
+Có cho con khỉ tiền không?<scroll>
+<migi>Cho nó 10 Rupee<scroll>
+  Đồ khỉ mà xài tiền làm gì!<force_end><end>
+  
+//Ptr11D
+#W24($1F0357)
+Khẹc khẹc!Tui nhận đủ tiền rùi!<line>
+Tui sẽ làm bạn với cậu một lát<line>
+khẹc khẹc~<end>
+
+//Ptr11E
+#W24($1F035A)
+Khẹc khẹc...Đồ keo kiệt...<line>
+Thui tui hơm cần cậu nữa.<line>
+Bái bai khẹc khẹc~!<end>
+
+//Ptr11F
+#W24($1F035D)
+Khẹc!Cậu làm gì đó!<line>
+Tui hơm theo cậu nữa đâu!<end>
+
+//Ptr120
+#W24($1F0360)
+Phù~Cảm ơn đã cứu mạng...<line>
+Xin hãy dẫn tôi ra bên ngoài.<end>
+
+//Ptr121
+#W24($1F0363)
+Gyaaaa~!<line>
+Chói quá~!<end>
+
+//Ptr122
+#W24($1F0366)
+Ah... Đợi đã~<line>
+Đừng tới chỗ đó...<end>
+
+//Ptr123
+#W24($1F0369)
+<text_spd><$02>
+Ta tên là Agina.Có vẻ như ở Thánh<line>
+địa,nơi đã bị Thất hiền giả phong<line>
+ấn,nay đã xảy ra chuyện gì rồi...<pause><scroll>
+Đây là điềm báo trước cho<scroll>
+"tai ách nặng nề" trong lời dự<scroll>
+ngôn của Thất hiền giả và các hậu<scroll>
+duệ của người Hylia.<pause><scroll>
+... ... ...<pause><scroll>
+Theo lời dự ngôn đó thì "Dũng sĩ<scroll>
+mang theo cuốn sách Thủ ấn,đứng<scroll>
+ở sa mạc"...<pause><scroll>
+Chỉ cần có cuốn sách Thủ ấn thì<scroll>
+sẽ hiểu được cổ văn tự của dân<scroll>
+Hylia.<pause>Cuốn sách đó đang nằm ở đâu<scroll>
+đó trong một ngôi nhà dân...<pause><scroll>
+Nhất định con phải tìm được nó nếu<scroll>
+muốn trở thành "Dũng sĩ"...<end>
+
+//Ptr124
+#W24($1F036C)
+<text_spd><$02>
+Con đã tìm đủ 3 biểu tượng rồi<line>
+nhỉ.<pause>Nếu như con đúng là "Dũng sĩ"<line>
+chân thật với "trí tuệ","dũng khí"<scroll>
+và "sức mạnh" thì thanh kiếm<scroll>
+Master-sword đang say ngủ trong<scroll>
+rừng kia sẽ thuộc về con.<end>
+
+//Ptr125
+#W24($1F036F)
+<text_spd><$02>
+Ồ đó chính là cuốn sách Thủ ấn!<line>
+Chỉ cần có nó là có thể hiểu được<line>
+ngôn từ của dân Hylia rồi.<end>
+
+//Ptr126
+#W24($1F0372)
+<text_spd><$02>
+Hỡi vị "Dũng sĩ" chân thật...<line>
+Bây giờ ta tin rằng con có thể<line>
+giành lại hòa bình cho đất nước<scroll>
+này một lần nữa.<end>
+
+//Ptr127
+#W24($1F0375)
+Có vẻ như con đã trưởng thành hơn<line>
+sau khi vượt qua thử thách rồi nhỉ.<line>
+Quả không phụ lòng ta.<end>
+
+//Ptr128
+#W24($1F0378)
+Chú mày là kẻ làm rộn giấc ngủ<line>
+trưa của ta phải không?Để ta cho<line>
+chú mày cái này,rồi biến đi!<end>
+
+//Ptr129
+#W24($1F037B)
+Ta chẳng còn gì để cho cả!<line>
+Thôi cầm cái này rồi biến đi!<end>
+
+//Ptr12A
+#W24($1F037E)
+Chào <name>!Gần đây có sương mù<line>
+quái dị lãng đãng trong rừng.Cháu<line>
+đừng có vào đó nhé.<end>
+
+//Ptr12B
+#W24($1F0381)
+<text_spd><$01>
+Sao cũng được nhưng cái cây này<line>
+quái đản quá.Cảm giác cưa không<line>
+giống mọi khi.Nào dô ta~<end>
+
+//Ptr12C
+#W24($1F0384)
+<text_spd><$01>
+Có vẻ như sương mù trong rừng đã<line>
+tan hết rồi.May quá đi.Nào ta<line>
+xuất hành thôi người anh em!<end>
+
+//Ptr12D
+//やあ、<name>、今おとうとと<line>
+//ケンカしてんだ。 カベの<blank>
+//通路も、ふさいでやったい!<end>
+#W24($1F0387)
+Tui vừa cãi nhau với thằng em,nên<line>
+bịt luôn cánh cửa trên tường rùi.<end>
+
+//Ptr12E
+#W24($1F038A)
+Cậu phá hư bức tường rùi...<line>
+Thôi đành chịu.Giờ làm hòa với<line>
+nó coi sao...<end>
+
+//Ptr12F
+#W24($1F038D)
+Nè <name>,cậu từ trong phòng anh<line>
+tui ra phải hơm?Anh trai tui vẫn<line>
+còn dỗi à?<end>
+
+//Ptr130
+#W24($1F0390)
+<text_spd><$02><frame_type><$02><color><$05>
+<name>,nhờ cậu mà ta đã được giải<line>
+phóng khỏi bàn tay của Ma tộc.<line>
+Ta rất biết ơn cậu...<pause><scroll>
+...Thế giới này vốn là Thánh địa<scroll>
+nơi cất giữ Tam bảo,"Triforce".<pause><scroll>
+Nhưng rồi Ganon,tên đầu lãnh của<scroll>
+nhóm đạo tặc đã đoạt được nó,<pause>theo<scroll>
+tâm nguyện của hắn mà nơi này trở<scroll>
+thành thế giới hắc ám như thế này...<pause><scroll>
+Âm mưu của hắn là khi tích đủ sức<scroll>
+mạnh thì sẽ cai trị cả thế giới<scroll>
+ánh sáng của chúng ta.<pause><scroll>
+Và hắn định dùng những cô gái thừa<scroll>
+hưởng sức mạnh của Thất hiền giả<scroll>
+như chìa khóa để mở phong ấn,<pause><scroll>
+biến khu vực quanh thành Hyrule<scroll>
+thành con đường qua lại cho một<scroll>
+nguồn sức mạnh khủng khiếp hơn.<pause><scroll>
+Nhưng mà bây giờ,con đường đó vẫn<scroll>
+chưa được khai thông hoàn toàn.<pause><scroll><scroll><scroll><line>
+Bây giờ vẫn còn kịp.Nếu 7 người<line>
+bọn ta tập hợp lại thì chắc chắn<line>
+sẽ phá được kết giới mà Ganon<scroll>
+đang ẩn thân.<pause><scroll>
+Ta sẽ dùng sức mạnh của mình để<scroll>
+cho cậu biết vị trí của những cô<scroll>
+gái khác.<sfx><$2D><pause><scroll>
+Ta tin rằng nhất định cậu sẽ đánh<scroll>
+bại Ganon.Lúc đó thì bọn ta mới<scroll>
+có thể trở về hình dạng như cũ...<end>
+
+//Ptr131
+#W24($1F0393)
+<text_spd><$02><frame_type><$02><color><$05>
+<name>,nhờ cậu mà ta đã được giải<line>
+phóng khỏi bàn tay của Ma tộc.<line>
+Ta rất biết ơn cậu...<pause><scroll>
+Triforce khiến cho nguyện ước của<scroll>
+người chạm vào nó trở thành hiện<scroll>
+thực,miễn là kẻ đó vẫn còn sống...<pause><scroll>
+Vì thế cho nên vị trí của Thánh<scroll>
+địa chỉ được truyền đến những kẻ<scroll>
+được lựa chọn.<pause><scroll>
+Nhưng có vẻ như vị trí của nó bị<scroll>
+đứt đoạn ở đâu đó...<pause><scroll>
+Và rồi kẻ lại tìm thấy Thánh địa<scroll>
+chính là tên đạo tặc Ganon.<pause><scroll>
+Nhưng may thay là hắn ta không<scroll>
+biết cách để trở về thế giới<scroll>
+ánh sáng.<pause><scroll>
+...Đúng vậy,hãy nhớ lại đi.<scroll>
+Không phải chỉ mỗi mình cậu,mỗi<scroll>
+mình Dũng sĩ là người duy nhất<scroll>
+mang chiếc gương ma pháp!<pause><scroll>
+Trên núi Hebra còn một số ma<scroll>
+pháp trận khác.<pause><scroll>
+Nếu dùng các ma pháp trận đó để<scroll>
+qua lại giữa 2 thế giới thì cậu sẽ<scroll>
+tìm được lũ yêu quái ẩn thân ở<scroll>
+thế giới bóng tối.<pause><scroll>
+Chỉ có cậu là người duy nhất có<scroll>
+thể đánh bại được tên đạo tặc<scroll>
+Ganondrof...<pause><scroll>
+Không,đúng ra là Ma vương Ganon.<scroll>
+Ta sẽ cầu nguyện cho cậu.<end>
+
+//Ptr132
+#W24($1F0396)
+<text_spd><$02><frame_type><$02><color><$05>
+<name>,nhờ cậu mà ta đã được giải<line>
+phóng khỏi bàn tay của Ma tộc.<line>
+Ta rất biết ơn cậu...<pause><scroll>
+...Cậu có biết lời dự ngôn về<scroll>
+"tai ách nặng nề" không?<pause><scroll>
+Ta nghe như vầy...Nếu như kẻ mang<scroll>
+ác tâm mà có được Triforce thì<scroll>
+nhất định "Dũng sĩ" sẽ xuất hiện.<pause><scroll>
+"Dũng sĩ" sẽ đánh bại kẻ gây ra<scroll>
+"tai ách nặng nề".<pause><scroll>
+Nhưng khi "Dũng sĩ" thất bại thì<scroll>
+thế giới sẽ bị bao trùm trong bàn<scroll>
+tay của kẻ mang ác tâm...<pause><scroll>
+Đúng vậy,chỉ có người thuộc dòng<scroll>
+tộc Kỵ sĩ từng bảo vệ Vương gia<scroll>
+Hylia mới có thể trở thành<scroll>
+"Dũng sĩ"...<pause><scroll>
+<name>,cậu là người thừa hưởng<scroll>
+dòng máu của tộc Kỵ sĩ nhỉ.<pause><scroll>
+Nhất định hãy cứu lấy Vương nữ<scroll>
+Zelda.<end>
+
+//Ptr133
+#W24($1F0399)
+<text_spd><$02><frame_type><$02><color><$05>
+<name>,nhờ cậu mà ta đã được giải<line>
+phóng khỏi bàn tay của Ma tộc.<line>
+Ta rất biết ơn cậu...<pause><scroll>
+Khi Thất hiền giả phong ấn lối<scroll>
+thông với thế giới bóng tối thì<scroll>
+các vị ấy đã bị Ma tộc tấn công...<pause><scroll>
+Và những người bảo vệ Thất hiền<scroll>
+giả khi ấy chính là tộc Kỵ sĩ.<pause><scroll>
+Cũng trong trận chiến đó mà huyết<scroll>
+mạch của dòng tộc Kỵ sĩ gần như<scroll>
+bị đứt đoạn...<pause><scroll>
+Ta nghe là như vậy...Nhưng có lẽ<scroll>
+cậu là người duy nhất còn sống sót<scroll>
+của dòng tộc Kỵ sĩ ấy...<pause><scroll>
+Thật kỳ lạ khi người cuối cùng<scroll>
+lại tiềm ẩn sức mạnh trở thành<scroll>
+"Dũng sĩ".<pause><scroll>
+Ta tin chắc nhất định cậu sẽ đánh<scroll>
+bại được Ganon!<end>
+
+//Ptr134
+#W24($1F039C)
+<text_spd><$02><frame_type><$02><color><$05>
+<name>,nhờ cậu mà ta đã được giải<line>
+phóng khỏi bàn tay của Ma tộc.<line>
+Ta rất biết ơn cậu...<pause><scroll>
+Có truyền thừa rằng người Hylia<scroll>
+có thể điều khiển được sức mạnh<scroll>
+không  thể nghĩ bàn.<pause><scroll>
+Và 7 vị Hiền giả cũng vậy.<pause><scroll><scroll><scroll><line>
+Nhưng theo năm tháng thì dòng máu<line>
+Hylia trở nên mờ nhạt dần.Các hậu<line>
+duệ của Thất hiền giả như bọn ta<scroll>
+cũng không có sức mạnh to lớn.<pause><scroll>
+Tuy nhiên,nếu có được sức mạnh<scroll>
+của tộc Kỵ sĩ cai quản dũng khí<scroll>
+thì sức mạnh của Hiền giả cai<scroll>
+quản trí tuệ sẽ càng lớn mạnh<scroll>
+hơn!<pause><scroll>
+Ta không còn nhiều thời gian cho<scroll>
+tới khi con đường kết nối ánh<scroll>
+sáng và bóng tối được khai thông<scroll>
+hoàn toàn.<pause><scroll>
+Nếu đánh bại được Ganon thì thế<scroll>
+giới bóng tối này sẽ hoại diệt,và<scroll>
+rồi Tam bảo Triforce sẽ đợi chủ<scroll>
+nhân tiếp theo xuất hiện.<pause><scroll>
+Ta tin ở cậu.<scroll>
+...Hãy cố lên...<end>
+
+//Ptr135
+#W24($1F039F)
+<text_spd><$02><frame_type><$02><color><$03>
+<name>,nhờ cậu mà tôi đã được giải<line>
+phóng khỏi bàn tay của Ma tộc.<line>
+Tôi rất biết ơn cậu...<pause><scroll>
+Lý do Ganon tập hợp chúng tôi lại<scroll>
+là vì hắn không đủ sức phá phong<scroll>
+ấn của Thất hiền giả.<pause><scroll>
+Và rồi hắn sử dụng gã tư tế Agnim<scroll>
+để đưa 7 cô gái thừa kế sức mạnh<scroll>
+của Thất hiền vào cõi bóng tối.<pause><scroll>
+Sau khi lợi dụng sức 7 người,phá<scroll>
+vỡ phong ấn thì hắn giam chúng<scroll>
+tôi trong các thủy tinh thể,<scroll>
+giao chúng tôi cho lũ yêu ma.<pause><scroll>
+Nhưng Ganon mắc một sai lầm lớn,<scroll>
+đó là không hề biết đến cậu.<pause><scroll>
+Vương nữ Zelda hiện đang bị giam<scroll>
+trong tảng đá hình rùa,đang chờ<scroll>
+đợi cậu.<pause><scroll>
+Nào,hãy mau đến chỗ Vương nữ mà<scroll>
+giải cứu nàng.<end>
+
+
+//Ptr136
+#W24($1F03A2)
+<text_spd><$02><frame_type><$02>
+<name>,cuối cùng cậu cũng đến được<line>
+đây.Cậu đúng là vị "Dũng sĩ" trong<line>
+truyền thuyết rồi nhỉ.<pause><scroll>
+Ngay từ lần đầu gặp cậu,ta đã có<scroll>
+cảm giác như vậy rồi.<scroll>
+... ... ...<pause><scroll>
+Ganon đang giăng kết giới ở núi<scroll>
+Tử vong,đợi đến khi khai thông con<scroll>
+đường qua lại giữa 2 thế giới.<pause><scroll>
+Một khi Ganon thoát ra được thế<scroll>
+giới ánh sáng thì có lẽ chẳng còn<scroll>
+ai bắt được hắn nữa.<pause><scroll>
+Nhưng trong cái không gian kín này<scroll>
+thì dù hắn có trốn đi đâu cũng<scroll>
+sẽ bị phát hiện thôi.<pause><scroll>
+Nào,cậu hãy mang theo 7 thủy tinh<scroll>
+thể mà tiến vào tháp Ganon.<pause><scroll>
+Bọn ta sẽ hợp sức để phá vỡ kết<scroll>
+giới.Và nhất định hãy giành lại<scroll>
+nền hòa bình cho Vương quốc này...<sfx><$2D><end>
+
+//Ptr137
+#W24($1F03A5)
+<text_spd><$02><frame_type><$02><color><$03>
+Ta nguyện cho Tam bảo Triforce<line>
+luôn dẫn lối trên con đường của<line>
+Dũng sĩ.<end>
+
+//Ptr138
+#W24($1F03A8)
+<text_spd><$02><frame_type><$02><color><$03>
+Cậu có nghe ta nói gì không?<line>
+<migi>Vẫn nghe mà<line>
+  Chẳng để tâm<force_end><end>
+  
+//Ptr139
+#W24($1F03AB)
+<text_spd><$02><frame_type><$02><color><$03>
+<name>!Bảy người bọn ta sẽ<line>
+thử phá kết giới của Ganon.<end>
+
+//Ptr13A
+#W24($1F03AE)
+<text_spd><$02><frame_type><$02>
+<name>,cuối cùng cậu cũng đến được<line>
+đây.Cậu đúng là vị "Dũng sĩ" trong<line>
+truyền thuyết rồi nhỉ.<pause><scroll>
+Ngay từ lần đầu gặp cậu,ta đã có<scroll>
+cảm giác như vậy rồi.<scroll>
+... ... ...<pause><scroll>
+Ganon đang giăng kết giới ở núi<scroll>
+Tử vong,đợi đến khi khai thông con<scroll>
+đường qua lại giữa 2 thế giới.<pause><scroll>
+Một khi Ganon thoát ra được thế<scroll>
+giới ánh sáng thì có lẽ chẳng còn<scroll>
+ai bắt được hắn nữa.<pause><scroll>
+Nhưng trong cái không gian kín này<scroll>
+thì dù hắn có trốn đi đâu cũng<scroll>
+sẽ bị phát hiện thôi.<pause><scroll>
+Vẫn còn những cô gái khác đang đợi<scroll>
+cậu đến giải cứu đấy <name>.<pause><scroll>
+Nào,hãy tiến vào ngọn tháp Ganon.<scroll>
+Bọn ta,các hậu duệ của Thất hiền<scroll>
+giả sẽ hợp sức để phá vỡ kết giới.<pause><scroll>
+Và nhất định hãy giành lại nền<scroll>
+hòa bình cho Vương quốc này...<sfx><$2D><end>
+
+
+
+//Ptr13B
+#W24($1F03B1)
+<text_spd><$02>
+Chà chà,đại hiệp <name> đó à.<line>
+Vãn bối đợi đại hiệp đã lâu!<line>
+Khặc khặc khặc...<pause><scroll>
+Vãn bối định cho đại hiệp thấy<scroll>
+cảnh cô bé Zelda này biến mất ngay<scroll>
+trước mắt đại hiệp.<pause><scroll>
+Nào,hãy nhìn cho kỹ!<scroll>
+Phút cuối cùng của Zelda đây!<end>
+
+//Ptr13C
+#W24($1F03B4)
+<text_spd><$02>
+Hô hô hô...Vậy là phong ấn của<line>
+Thất hiền giả đã được giải trừ<line>
+ngoạn mục.<pause><scroll>
+Chẳng còn bao lâu nữa thì sức<scroll>
+mạnh của yêu ma sẽ tràn ngập<scroll>
+đất nước này...<pause><scroll>
+Chỉ là vấn đề thời gian thôi.<pause><scroll>
+Rốt cuộc thì "Dũng sĩ" trong truyền<scroll>
+thuyết cũng chẳng làm được gì Ma<scroll>
+tộc bọn ta với "sức mạnh Hoàng<scroll>
+kim" cả.Hô hô hô vĩnh biệt!<end>
+
+//Ptr13D
+#W24($1F03B7)
+<text_spd><$02>
+Hô hô hô,kiểu gì đại hiệp nhóc con<line>
+cũng muốn bị ăn đòn phải không...<line>
+Vậy để vãn bối cho đại hiệp toại<scroll>
+nguyện!<end>
+
+//Ptr13E
+#W24($1F03BA)
+<text_spd><$02>
+Khụ!Quả đúng là "Dũng sĩ" lợi hại<line>
+như lời đồn!<pause>Nhưng đừng hòng làm<line>
+được gì!Ta sẽ kéo ngươi vào thế<scroll>
+giới âm ty!<end>
+
+//Ptr13F
+#W24($1F03BD)
+<text_spd><$02>
+Hô hô hô,<name> đại hiệp giỏi quá.<line>
+Mò được tới tận đây cơ đấy.<pause><line>
+Vãn bối đây được diện kiến đại<scroll>
+hiệp những 2 lần,quả là vinh dự<scroll>
+phúc báo mấy đời đây mà.<pause><scroll>
+Nhưng đừng hòng có lần thứ 3 nhé!<scroll>
+Chết đi thằng ranh con~!!<end>
+
+//Ptr140
+#W24($1F03C0)
+<text_spd><$02>
+Cậu tìm ta có việc gì?<line>
+<migi>Muốn xin chân vịt<line>
+  Tui tình cờ ghé qua thui<force_end><end>
+  
+//Ptr141
+#W24($1F03C3)
+<text_spd><$02>
+Vậy à.Nhưng của đâu sẵn mà xin.<line>
+Nếu muốn thì ta bán với giá 500<line>
+Rupee.Đời này chẳng ai cho không<scroll>
+ai thứ gì cả.<pause><scroll>
+<migi>Đạo lý rất hay,trả đủ đây<scroll>
+  Thôi chớ nói đạo lý!<force_end><end>
+  
+//Ptr142
+#W24($1F03C6)
+<text_spd><$02>
+Hahaha,hảo hán!<line>
+Để ta bán cho nhóc cái chân vịt<line>
+này.Ngoài ra còn khuyến mãi thêm<scroll>
+một thứ nữa.<pause><scroll>
+Ta sẽ để nhóc sử dụng con nước bí<scroll>
+mật kết nối các sông hồ với nhau<scroll>
+mà chỉ có tộc Zöra bọn ta mới hay.<pause><scroll>
+Nếu thấy xoáy nước thì hãy bơi<scroll>
+vào đó.Nó sẽ đưa nhóc tới chỗ ao<scroll>
+hồ khu vực khác.<pause><scroll>
+Thôi,chào nhé.Nhớ giữ gìn cái<scroll>
+chân vịt cho cẩn thận..<end>
+
+//Ptr143
+#W24($1F03C9)
+<text_spd><$02>
+Vậy khi nào kiếm đủ Rupee thì ghé<line>
+lại đây...Thôi chào nhé.<line>
+Wahahahaha...!<end>
+
+//Ptr144
+#W24($1F03CC)
+<text_spd><$02>
+Vậy sao.Bất cứ khi nào nhóc muốn<line>
+nhòm mặt ta thì hãy tới đây...<line>
+Thôi chào nhé whahahaha...!<end>
+
+//Ptr145
+#W24($1F03CF)
+Chào anh <name>~<line>
+Anh muốn tìm Trưởng lão hở?<pause><line>
+Anh đừng nói chuyện này với<scroll>
+kẻ xấu nhé.<pause><scroll>
+Trưởng lão đang ở trong thần<scroll>
+điện ở phía Đông của thành.<pause><scroll>
+Để em đánh dấu lên bản đồ cho.<sfx><$2D><end>
+
+//Ptr146
+#W24($1F03D2)
+Anh gặp được ông Trưởng lão rồi á?<line>
+Nếu trong làng không còn kẻ xấu<line>
+thì ông Trưởng lão mới về được.<end>
+
+//Ptr147
+#W24($1F03D5)
+<text_spd><$01>
+Ái chà,cậu là khuôn mặt mới toanh<line>
+đó há.Cậu cũng tới thế giới này để<line>
+tìm "sức mạnh Hoàng kim" à?<pause><scroll>
+Nhưng mà chỉ người đầu tiên chạm<scroll>
+vào "sức mạnh Hoàng kim" thì mới<scroll>
+sử dụng được nó.<pause><scroll>
+Đó là kẻ mang tâm nguyện tạo nên<scroll>
+thế giới này...Đúng,thế giới này<scroll>
+là cõi phản ánh tâm thức của hắn.<pause><scroll>
+Cũng chỉ vì ta mù quáng mà tìm tới<scroll>
+đây,nhưng mà kẻ nào tới đây cũng<scroll>
+biến thành quái vật hết.<pause><scroll><scroll><scroll><line>
+Để biến thế giới này thành Thánh<line>
+địa như xưa thì cần phải đánh bại<line>
+hắn ta rồi để cho người xứng đáng<scroll>
+chạm vào "sức mạnh Hoàng kim".<pause><scroll>
+Ngoài cách đó ra thì chẳng còn<scroll>
+cách nào hết...Ta sẽ đợi cho tới lúc<scroll>
+đó trong bộ dạng này.<pause><scroll>
+Mà ngẫm lại mới thấy dân tộc cổ<scroll>
+xưa ở vùng này để lại mấy món<scroll>
+Tam bảo Triforce...Sức mạnh Hoàng kim<scroll>
+đúng là nghiệp chướng thật...<end>
+
+//Ptr148
+#W24($1F03D8)
+Con suối bất khả tư nghì.<line>
+Thử ném một món Item nào<blank>
+nào xuống suối nhé?<pause><scroll>
+Nào,làm gì đây?<scroll>
+<migi>Ném<scroll>
+  Không ném<force_end><end>
+  
+//Ptr149
+#W24($1F03DB)
+Thôi bỏ đi!<end>
+
+//Ptr14A
+#W24($1F03DE)
+Thời buổi khó khăn,vật giá lên<line>
+cao cớ sao đem tiền mà ném hồ ao!<end>
+
+//Ptr14B
+#W24($1F03E1)
+Vậy để ta trả nó lại cho cậu.<line>
+Lần sau đừng có đánh rơi nữa nhé.<end>
+
+//Ptr14C
+#W24($1F03E4)
+Muốn ném bao nhiêu Rupee?<line>
+<migi><num><$01><num><$00> Rupee<line>
+  <num><$03><num><$02> Rupee<force_end><end>
+
+
+//Ptr14D
+#W24($1F03E7)
+Cậu quả đúng là người công chính.<line>
+Ta bắt đầu thích cậu rồi đây.<pause><line>
+Để ta tặng cho cậu vật này...<pause><scroll>
+Đây là "mũi tên bạc",vật thiết<scroll>
+yếu để kết liễu Ganon.Không có nó<scroll>
+là không được đâu!<pause><scroll>
+Cũng chính vì ma lực của Ganon mà<scroll>
+ta trông phì nộn thế này.Nhất định<scroll>
+hãy đánh chết Ganon mà báo thù<scroll>
+cho ta!<end>
+
+//Ptr14E
+#W24($1F03EA)
+<line>
+    Đại cát!<end>
+	
+//Ptr14F
+#W24($1F03ED)
+<line>
+    Trung cát!<end>
+	
+//Ptr150
+#W24($1F03F0)
+<line>
+    Tiểu cát!<end>
+	
+//Ptr151
+#W24($1F03F3)
+<line>
+    Đại hung!<end>
+	
+//Ptr152
+#W24($1F03F6)
+Mà vận khí của thí chủ ngày<line>
+hôm nay là như này~<end>
+
+//Ptr153
+#W24($1F03F9)
+<name> tìm thấy 1 mảnh trái tim!<line>
+                 <heart3><heart4><end>
+				 
+//Ptr154
+#W24($1F03FC)
+<name> tìm thấy 1 mảnh trái tim!<line>
+                 <heart1><heart4><end>
+				 
+//Ptr155
+#W24($1F03FF)
+<name> tìm thấy 1 mảnh trái tim!<line>
+                 <heart1><heart5><end>
+				 
+//Ptr156
+#W24($1F0402)
+<name> tìm thấy 1 mảnh trái tim!<line>
+                 <heart1><heart2><line>
+Level trái tim gia tăng 1!<end>
+
+//Ptr157
+//ハ－トのうつわをみつけた !<line>
+//      <$EA><$EB><blank>
+//ハ－トのレベルが1つあがった<end>
+#W24($1F0405)
+<name> tìm thấy đồ đựng trái tim!<line>
+                 <heart1><heart2><blank>
+Level trái tim gia tăng 1!<end>
+
+//Ptr158
+#W24($1F0408)
+Hỡi lữ khách đường xa mỏi mệt,<line>
+hãy để ta trút bỏ mọi điều phiền<line>
+muộn của cậu...Nào,nhắm mắt lại đi...<end>
+
+//Ptr159
+#W24($1F040B)
+<text_spd><$01>
+Ui da!Trời đất!Cậu biến thành<line>
+con thỏ rùi hở!?<pause><scroll>
+Đúng rùi,cái thế giới này có địa<line>
+hình hơi giống thế giới bọn ta<scroll>
+sinh sống,nhưng mà lạ lắm~<pause><scroll>
+Hơn nữa người nào lạc vô thế giới<scroll>
+này thì sẽ bị biến thành hình dạng<scroll>
+phản ánh tâm thức của kẻ đó.<pause><scroll>
+Tướng tùy tâm sinh mà.<pause><scroll>
+Tui thì hay thay đổi xoành xoạch<scroll>
+nên giờ bị biến thành như quả banh<scroll>
+đổi hướng liên tục nè...<pause><scroll>
+Nhưng mà nếu có bảo vật Moon<scroll>
+Pearl thì sẽ trở lại hình dạng cũ<scroll>
+được đó.<end>
+
+//Ptr15A
+#W24($1F040E)
+<text_spd><$01>
+Ui da!Má ơi sao cậu chẳng thay<line>
+đổi hình dạng gì?Cậu đúng chẳng<line>
+phải kẻ tầm thường.<end>
+
+//Ptr15B
+#W24($1F0411)
+<text_spd><$01>
+Càm ràm gì hả thằng thỏ đế!<pause><line>
+Ta tới thế giới này để tìm "sức<line>
+mạnh Hoàng kim" mà không ngờ lại<scroll>
+ra hình dạng này mà cũng chẳng<scroll>
+trở về thế giới cũ được...<pause><scroll>
+Nếu ta lấy được bảo vật Moon Pearl<scroll>
+trong tháp Hebra thì chắc chắn sẽ<scroll>
+trở lại hình dạng cũ được...<pause><scroll>
+Nhưng giờ ta lôi thôi lếch thếch<scroll>
+thế này...Mà thằng khốn!Mau biến<scroll>
+đi chỗ khác!<end>
+
+//Ptr15C
+#W24($1F0414)
+<text_spd><$01>
+Ui da!Nhà ngươi không bị thay đổi<line>
+hình dạng sao!Tìm được bảo vật<line>
+Moon Pearl rồi à!<end>
+
+//Ptr15D
+#W24($1F0417)
+<text_spd><$01>
+Trong cái thế giới hỗn độn này hẳn<line>
+là cậu sẽ cần rất nhiều thứ.Thích<line>
+thứ gì thì hãy chọn đi...<end>
+
+//Ptr15E
+#W24($1F041A)
+<text_spd><$01>
+Mời vào!<line>
+Chỉ 30 Rupee thôi là được mở 2<line>
+hòm đồ.Hời quá còn gì.<pause><scroll>
+Muốn chơi không?<scroll>
+<migi>Chơi<scroll>
+  Thôi khỏi<force_end><end>
+  
+//Ptr15F
+#W24($1F041D)
+<text_spd><$01>
+Lần sau lại tới chơi hén.<line>
+Tui đợi đó.Thui bái bai~<end>
+
+//Ptr160
+//にいちゃん、にいちゃん!<line>
+//ちゃんとルピ－はらってから<blank>
+//宝箱あけとくれよ!<end>
+#W24($1F0420)
+<color><$06><text_spd><$01>
+Nè nè anh trai!Mình là người đàng<line>
+quàng chớ có phải hạng xà lơ đâu<line>
+mà tự tiện mở hộp đồ nhà người ta<scroll>
+dzậy nè!Phải trả tiền chớ!<end>
+
+//Ptr161
+//にいちゃん、宝箱はもう開けら<line>
+//れないよ。それでおしまい<blank>
+//だからな。<end>
+#W24($1F0423)
+<color><$06>
+Nè nè anh trai!Hổng mở được nửa<line>
+đâu.Hết rùi nha.<end>
+
+//Ptr162
+#W24($1F0426)
+Ngon rùi đó anh trai.<line>
+Cứ chơi thoải mái đêê~<end>
+
+//Ptr163
+#W24($1F0429)
+Xin chào.Thích món nào thì cứ<line>
+nhấn nút A để chọn.Nào,xin mời.<end>
+
+//Ptr164
+#W24($1F042C)
+Cậu muốn món đó cũng chẳng để<line>
+làm gì đâu.Sao không thử chọn<line>
+món khác đi?<end>
+
+//Ptr165
+#W24($1F042F)
+Cảm ơn nhiều!<line>
+Bất cứ lúc nào mất khiên thì<line>
+cứ ghé lại đây nhé.<end>
+
+//Ptr166
+#W24($1F0432)
+Xin cảm ơn!<line>
+Đó là thuốc sinh mệnh<line>
+giúp hồi phục thể lực.<end>
+
+//Ptr167
+#W24($1F0435)
+Xin cảm ơn!<line>
+Đó là mũi tên.Tên trong cung tên.<line>
+Không có cung thì không dùng được.<end>
+
+//Ptr168
+#W24($1F0438)
+Xin cảm ơn!<line>
+Nhấn nút A để vác lựu<line>
+đạn đặt trên sàn.<end>
+
+//Ptr169
+#W24($1F043B)
+Xin cảm ơn!<line>
+Đó là cong on.Con ong nhé.<line>
+Để làm gì thì tôi chả biết đâu.<end>
+
+//Ptr16A
+#W24($1F043E)
+Xin cảm ơn!<line>
+Này là hồi phục 1 trái tim nhé.<line>
+Nhớ thả tim cho tôi đấy.<end>
+
+//Ptr16B
+#W24($1F0441)
+Chà chà...Món đó hả?<line>
+Không có cái lọ rỗng thì<line>
+không mua được đâu.<end>
+
+//Ptr16C
+#W24($1F0444)
+Cậu không mang thêm món đó<line>
+được đâu.Có muốn chọn thêm<line>
+gì khác không?<end>
+
+//Ptr16D
+#W24($1F0447)
+<text_spd><$01>
+Không ngờ tao lại bị một thằng<line>
+nhóc miệng còn hôi sữa dí tới<line>
+đường cùng như này!<pause><scroll>
+Và thật không ngờ mày lại có thể<scroll>
+2 lần đẩy lùi phân thân tư tế bóng<scroll>
+tối Agnim của tao...<pause><scroll>
+Nhưng đừng hòng tao giao Tam bảo<scroll>
+Triforce cho mày!Tao sẽ đập chết<scroll>
+mày!<pause>Nhất định ước nguyện cai trị<scroll>
+cả thế giới ánh sáng và bóng tối<scroll>
+của tao sẽ được thành tựu!<end>
+
+//Ptr16E
+#W24($1F044A)
+<text_spd><$02>
+Thằng nhóc con,mày khá lắm!<line>
+Nhưng bí thuật bóng tối này còn<line>
+lâu mới thua mày!<pause><scroll>
+Quyết một phen sống mái nào!<end>
+
+//Ptr16F
+#W24($1F044D)
+<text_spd><$02>
+Nè nhóc,đây là sào huyệt ẩn náu<line>
+của phường đạo tặc bọn tao!<pause><scroll>
+Đừng có tự tiện bước vô nghe chưa!<pause><line>
+Chắc mày cũng biết rồi đó,ở sa mạc<scroll>
+Huyễn hoặc có tên mà ngày xưa<scroll>
+từng là đồng bọn của bọn tao.<end>
+
+
+//Ptr170
+#W24($1F0450)
+<text_spd><$02>
+Chào <name>.Ngày xưa căn nhà này<line>
+là sào huyệt ẩn náu của lũ đạo tặc.<pause><line>
+Mà cái gã đó tên là gì nhỉ...<pause><scroll>
+Ah đúng rồi,tên đạo tặc Blind khét<scroll>
+tiếng,hắn rất ghét chỗ sáng sủa.<end>
+
+//Ptr171
+#W24($1F0453)
+<text_spd><$02>
+Xin chào <name>...<line>
+Ta là tinh linh của Tam bảo<line>
+Triforce đây...<pause><scroll>
+Triforce có sức mạnh bất khả tư<scroll>
+nghì,biến mọi ước vọng trong tâm<scroll>
+khảm của kẻ chạm vào "sức mạnh<scroll>
+Hoảng kim" thành hiện thực như ý.<pause><scroll>
+"Sức mạnh Hoàng kim" là tặng vật<scroll>
+mà chư thần ban cho.Nếu kẻ chạm<scroll>
+vào nó là người công chính thì ước<scroll>
+nguyện đó sẽ thành hiện thực tốt<scroll>
+đời đẹp đạo.<pause><scroll>
+Nếu kẻ chạm vào nó mang tâm tà<scroll>
+ác thì hiện thực sẽ trở nên u ám...<pause><scroll>
+Nguyện ước của kẻ đó càng mạnh<scroll>
+mẽ thì Triforce càng phát huy sức<scroll>
+mạnh.<pause><scroll>
+Nguyện ước của Ganon là cai trị<scroll>
+thế giới.Vì tâm tà ác đó mà Thánh<scroll>
+địa biến thành cõi bóng tối.<pause><scroll>
+Khi có đủ sức mạnh,Ganon muốn<scroll>
+xuất hiện ở cõi ánh sáng để thực<scroll>
+hiện ước nguyện của hắn.<pause><scroll>
+Nhưng giờ đây Ganon,kẻ chạm vào<scroll>
+Triforce,đã ngã xuống,thì hẳn cõi<scroll>
+bóng tối sẽ tan biến.<pause><scroll>
+Giờ đây Triforce,"sức mạnh Hoàng<scroll>
+kim" đang đợi chủ nhân mới lại<scroll>
+nằm trong tay cậu.<pause><scroll>
+Nào,hãy chạm vào đây...<scroll>
+Như đúng ý nguyện trong tâm<scroll>
+khảm của cậu... ... ...<end>
+
+
+//Ptr172
+#W24($1F0456)
+Quân khốn kiếp!<line>
+Mang nó đi đi bớ quân ăn cướp!<end>
+
+//Ptr173
+#W24($1F0459)
+<text_spd><$01>
+Ui cha,ta nhìn thấy rồi.Cạnh con<line>
+thác Nguyện ước bên bờ sông có<line>
+cô gái cực kỳ xinh đẹp...<pause><scroll>
+<name>,nhất định chú mày phải đi<scroll>
+ngắm cô ta một lần mới được.Ta<scroll>
+nghĩ nhất định chú mày sẽ thích đó.<end>
+
+//Ptr174
+#W24($1F045C)
+Bí mật đó,đừng có nói ai biết<line>
+hết nghe chưa.<end>
+
+//Ptr175
+#W24($1F045F)
+Có thứ gì đó sống trong hang phía<line>
+Đông hồ Hylia.Bí mật đó,đừng nói<line>
+ai biết hết nghe chưa.<end>
+
+//Ptr176
+#W24($1F0462)
+Đánh chết quân địch đang bị đơ<line>
+thì sẽ lòi ra nhiều Rupee.Bí mật đó<line>
+đừng nói ai biết hết nghe chưa.<end>
+
+//Ptr177
+#W24($1F0465)
+Dùng búa đập nát kẻ địch đang đóng<line>
+băng thì sẽ nhận được bình ma<line>
+pháp đó.Nhóc có biết không...<end>
+
+//Ptr178
+#W24($1F0468)
+Đầu tiên hãy đi tìm<line>
+Sahasrahla cái đã...<line>
+La la... ... ...<end>
+
+//Ptr179
+#W24($1F046B)
+Tìm thấy Sahasrahla rùi à!<line>
+... ... ...<line>
+Giỏi quá La la...<end>
+
+//Ptr17A
+#W24($1F046E)
+Xin lỗi nhé.<line>
+Có vẻ không đủ Rupee rồi...<end>
+
+//Ptr17B
+#W24($1F0471)
+Kụk ták!Cái,cái gì...<line>
+Giờ biến thành người rùi nói được<line>
+cả tiếng người rùi nè!<pause><scroll>
+Chính cậu là đứa ăn hiếp bạn tui<scroll>
+phải hơm!Tượng gà đằng kia thấy<scroll>
+hết đó nghe!<pause><scroll>
+Mà biến thành người cũng bất tiện<scroll>
+ghê gứm!Tui mún quay lại làm gà<scroll>
+tiếp~Kụk ták~!<end>
+
+
+//Ptr17C
+//かけたルピ－がふえるかへるか<line>
+//20ルピ－で1ぱつしょうぶだ<blank>
+//あんた、やってみないかい?<pause><scroll>
+//さあ、どうする?<scroll>
+// 》  しょうぶする<scroll>
+//     逃げだす<force_end><end>
+#W24($1F0474)
+<text_spd><$02>
+Bỏ 20 Rupee để kiếm nhiều hơn mà<line>
+cũng có thể là ít hơn.Do ăn ở cả<line>
+thôi.Anh trai chơi không?<scroll>
+<migi>Chơi<scroll>
+  Không chơi<force_end><end>
+
+//Ptr17D
+#W24($1F0477)
+<text_spd><$02>
+Hảo hán!Thích cái rương nào thì<line>
+cứ mở cái đó!<end>
+
+//Ptr17E
+#W24($1F047A)
+<text_spd><$02>
+Tiếc quá...Thôi khi nào kiếm được<line>
+nhiều Rupee hơn và nổi máu ăn thua<line>
+thì cứ quay lại đây.<end>
+
+//Ptr17F
+#W24($1F047D)
+<text_spd><$02>
+Dám bỏ 100 Rupee để được ăn to<line>
+hơn hoặc ít hơn không?<line>
+Được ăn cả ngã về không,<scroll>
+do ăn ở cả.<pause><scroll>
+Dám chơi không nè?<scroll>
+<migi>Chơi luôn sợ gì<scroll>
+  Thôi em sợ<force_end><end>
+  
+//Ptr180
+#W24($1F0480)
+<text_spd><$02>
+Chào <name>,căn nhà này khó tìm<line>
+khó vào vậy mà cậu cũng cất công<line>
+đếm thăm nhỉ.<pause><scroll>
+Để cảm ơn thì ta sẽ cho cậu biết<scroll>
+một chuyện rất hay.<pause><scroll>
+Cứ men theo con sông mà đi,tới chỗ<scroll>
+khuất mắt người ta sẽ thấy một cái<scroll>
+hồ.<pause>Trong hồ có lũ Zöra nổi lềnh<scroll>
+phềnh.<pause>Nghe nói ở đó có bảo vật của<scroll>
+lũ Zöra là XXX!Ta cũng muốn nhìn<scroll>
+thấy nó một lần cho biết.<end>
+
+  
+//Ptr181
+#W24($1F0483)
+<text_spd><$02>
+Căn nhà này khó vào khó tìm vậy<line>
+mà cậu cũng tìm được đường vào<line>
+thăm.Cảm ơn nhé!<pause><scroll>
+Mà ngày xưa trong làng này có<scroll>
+cậu nhóc thổi Ocarina,nói chuyện<scroll>
+được với động vật.<pause><scroll><scroll><scroll><line>
+Cậu ta được con chim chở đi khắp<line>
+nơi trong đất nước này.Chắc hẳn<line>
+đó là nhờ sức mạnh kỳ diệu của<scroll>
+cái Ocarina đó rồi.<end>
+
+//Ptr182
+#W24($1F0486)
+<frame_type><$00>
+<migi>Bắt đầu tại nhà của <name><line>
+  Bắt đầu tại Giáo hội<$FE><$72><end>
+
+//Ptr183
+#W24($1F0489)
+<frame_type><$00>
+<migi>Bắt đầu tại nhà của <name><line>
+  Bắt đầu tại Giáo hội<line>
+  Bắt đầu tại hang trong núi<$FE><$71><end>
+  
+//Ptr184
+//<text_spd><$00>》 続けてゲ－ムする<line>
+//  セ－ブしておわる<$FE><$72><end>
+#W24($1F048C)
+<migi>Tiếp tục chơi<line>
+  Save game rồi kết thúc<$FE><$72><end>
+  
+//Ptr185
+#W24($1F048F)
+<text_spd><$02>
+Trò chơi đào đất đây!<line>
+Trong 30 giây cậu đào thoải mái,<line>
+đào được gì là của cậu tất.<pause><scroll>
+Chỉ 80 Rupee thôi,chơi không?<scroll>
+<migi>Đào<scroll>
+  Không đào<force_end><end>
+
+//Ptr186
+#W24($1F0492)
+Vậy để tôi cho cậu mượn cái xẻng.<line>
+Cầm nó lên rồi nhấn nút Y để đào.<line>
+Nào,đào đi!<end>
+
+//Ptr187
+#W24($1F0495)
+Vậy à.Thôi đành vậy.Khi nào<line>
+kiếm đủ Rupee thì lại tới nhé.<end>
+
+//Ptr188
+#W24($1F0498)
+Hết giờ rồi!<line>
+Lần sau lại tới nữa nhé.<line>
+Thôi tạm biệt...<end>
+
+//Ptr189
+#W24($1F049B)
+Lần sau lại tới nhé~<line>
+Tôi đợi cậu đấy~<end>
+
+#JMP($1B0000)
+//Ptr18A
+#W24($1F049E)
+Giờ không tiện nói rõ.<line>
+Xin lỗi nhé.Lần sau hãy tới.<end>
+
+//Ptr18B		bit 1		00
+#W24($1F04A1)
+<frame_type><$00><text_spd><$02><color><$06>
+Này chú nhóc,để ta nói cho chú<line>
+mày biết một bí mật trong cái<line>
+game này mà trên đời này chưa<scroll>
+từng có ai biết.<pause><scroll><scroll><scroll><line>
+Thật ra,nói cho chính xác thì đây<line>
+là bí mật của riêng bản dịch<line>
+tiếng Việt này thôi,chứ trong game<scroll>
+gốc không hề có đâu.<pause><scroll><scroll><scroll><line>
+Bí mật là gì ư?<pause><line>
+Đó là chuyện 2 tên lính gác đằng<line>
+kia biết rất nhiều chuyện bí mật.<pause><scroll><scroll><scroll><line>
+Chúng nó biết được chuyện bí mật<line>
+gì ư?<pause>Ta cũng không biết nữa.Hãy<line>
+đi mà hỏi chúng nó ấy.<end>
+
+
+//Ptr18C
+#W24($1F04A4)
+<frame_type><$00><text_spd><$02><color><$06>
+Chú mày có biết là thằng cha<line>
+lính gác cổng thành biết rất<line>
+nhiều chuyện trên trời dưới biển<scroll>
+không hả?<end>
+
+//Ptr18D		
+#W24($1F04A7)
+<frame_type><$00><text_spd><$02><color><$06>
+Hắn ta biết chuyện gì hả?<line>
+Cứ đi hỏi hắn,đừng hỏi bọn ta.<end>
+
+//Ptr18E	
+#W24($1F04AA)
+<frame_type><$00><text_spd><$02><color><$06>
+Khà khà.Hai thằng lính đằng ấy<line>
+khai ra rồi hả.Đúng là ta biết<line>
+một bí mật rất lớn của chúng nó.<pause><scroll><scroll><scroll><line>
+Chú mày cứ đi mà hỏi kỹ thì kiểu<line>
+gì chúng cũng ói ra thôi.<end>
+
+//Ptr18F
+#W24($1F04AD)
+<text_spd><$02><color><$06>
+Chúng nó lại nói la tinh...ý nhầm,<line>
+nói linh ta linh tinh với chú mày<line>
+chứ gì?<pause><scroll>
+Muốn chúng khai ra bí mật thật<scroll>
+sự hả?Đơn giản lắm,chỉ cần nhấn<scroll>
+nút bí mật khi nghe chúng nó<scroll>
+kể chuyện là được.<pause><scroll><scroll><scroll><line>
+Đừng hỏi ta nút bí mật là gì.<line>
+Tự mò mới vui nhóc con ạ.<end>
+
+//Ptr190
+#W24($1F04B0)
+<color><$06>
+Những gì cần nói với chú mày<line>
+thì ta đều nói hết cả rồi.Thôi<line>
+mau đi giải cứu người đẹp đi!<end>
+
+//Ptr191
+#W24($1F04B3)
+<text_spd><$02><color><$06>
+Hừm...Chú mày đã dò ra bí mật của<line>
+thằng cha lính gác cổng thành<line>
+rồi sao?<end>
+
+//Ptr192
+#W24($1F04B6)
+<text_spd><$02><color><$06>
+Được rồi,đúng là bọn ta biết<line>
+một bí mật.<pause>Nhưng mà đâu thể dễ<line>
+dàng nói cho kẻ lạ biết được.<pause><scroll><scroll><scroll><line>
+Nếu chú có lòng thì bọn anh mới<line>
+có dạ.<pause>Chú muốn hóng thì bọn<line>
+anh mới kể được.<end>
+
+//Ptr193
+#W24($1F04B9)
+<text_spd><$02><color><$06>
+Muốn biết bí mật trong cái game<line>
+này hả?<pause>Thật ra chả có cái bí<line>
+mật vẹo gì cả.<end>
+
+//Ptr194
+#W24($1F04BC)
+<text_spd><$02><color><$06>
+Chẳng qua bản dịch Việt văn<line>
+này có nhiều điểm cải tiến về<line>
+mặt kỹ thuật so với bản gốc<scroll>
+thôi.<pause>Chú mày biết đó,cái game<scroll>
+này chạy trên máy Super Famicom<scroll>
+nhưng Ninh Tiền Đô rất lười,<scroll>
+toàn copy paste code từ thời<scroll>
+Famicom thôi.<pause><scroll><scroll><scroll><line>
+Và họ cũng không khai thác hết<line>
+sức mạnh phần cứng của Super<line>
+Famicom.Thật quá phí!<end>
+
+//Ptr195
+#W24($1F04BF)
+<text_spd><$02><color><$06>
+Một trong những điểm cải tiến<line>
+về kỹ thuật của bản dịch này chính<line>
+là cái khung thoại đấy.<pause><scroll>
+Chú mày có thấy là khung thoại<scroll>
+này to hơn,viết được nhiều chữ<scroll>
+hơn bản gốc không?<pause><scroll>
+Và màu nền của khung thoại cũng<scroll>
+trở nên bán trong suốt,hiển thị<scroll>
+màu ngẫu nhiên dễ nhìn dễ đọc<scroll>
+hơn khung thoại trong bản gốc<scroll>
+cả tỷ lần.<end>
+
+//Ptr196
+#W24($1F04C2)
+<text_spd><$02><color><$06>
+Bản dịch này cũng được viết lại<line>
+code để game chạy nhanh hơn,<line>
+có thêm nhiều lời thoại mới.<pause><scroll>
+Đây,chẳng hạn như những lời mà<scroll>
+bọn anh đang nói với chú đều<scroll>
+chẳng có trong bản gốc.<end>
+
+//Ptr197
+#W24($1F04C5)
+<text_spd><$02><color><$06>
+Bản dịch Việt ngữ này còn có nhiều<line>
+tính năng ẩn mà bản gốc không có.<pause><line>
+Chẳng hạn như khi chú nhấn đúng<scroll>
+nút bí mật vào đúng thời điểm<scroll>
+thì sẽ nhận được hiệu ứng bí mật,<scroll>
+Item bí mật.<pause><scroll>
+Chẳng hạn như những lời anh đang<scroll>
+nói với chú đây cũng là thoại bí<scroll>
+mật nè,phải kích hoạt mới nghe<scroll>
+được chứ dễ gì anh rót lời vàng<scroll>
+ngọc cho kẻ phàm phu như chú.<end>
+
+//Ptr198
+#W24($1F04C8)
+<text_spd><$02><color><$06>
+Chú mày có biết sai lầm lớn nhất<line>
+của nhiều người khi gọi bản dịch<line>
+này là gì khum?<end>
+
+//Ptr199
+#W24($1F04CB)
+<text_spd><$01><color><$06>
+Họ rất hay gọi đây là bản<line>
+"Việt hóa".Nhưng thực chất<line>
+không phải là như vậy.<end>
+
+//Ptr19A
+#W24($1F04CE)
+<text_spd><$02><color><$05>
+Đó là một sự nhầm lẫn khum hề<line>
+nhẹ do thiếu hiểu biết.<pause><line>
+Dịch thuật và "Việt hóa" là hai khái<scroll>
+niệm hoàn toàn khác nhau.<pause><scroll>
+Anh nhắc lại,đây là bản dịch Việt<scroll>
+văn,hoàn toàn khum phải bản<scroll>
+"Việt hóa" như chú và đồng bọn<scroll>
+nghĩ đâu.<end>
+
+
+//Ptr19B
+#W24($1F04D1)
+<text_spd><$02><color><$06>
+Bản dịch tiếng Việt hay còn gọi<line>
+là bản "Việt ngữ hóa",hoàn toàn<line>
+khác với khái niệm "Việt hóa".<pause><scroll>
+Đúng nhận sai cãi giúp anh.<end>
+
+//Ptr19C
+#W24($1F04D4)
+<text_spd><$02><color><$06>
+Chú mày vẫn chưa hiểu chứ gì?<line>
+Này nhé,tiếp vĩ ngữ "hóa" là từ<line>
+đứng sau một danh từ nào đó nhằm<scroll>
+biến thứ gì đó thành danh từ đứng<scroll>
+trước "hóa".<pause><scroll>
+Chẳng hạn,"hiện đại hóa" có nghĩa<scroll>
+là làm cho trở nên hiện đại,còn<scroll>
+"Việt ngữ hóa" là biến từ một thứ<scroll>
+ngôn ngữ nào đó thành ra tiếng<scroll>
+Việt,nôm na là dịch ra tiếng Việt.<pause><scroll>
+Trong khi đó thì "Việt hóa" nghĩa<scroll>
+là làm cho thứ gì đó trở thành<scroll>
+của Việt Nam,mang bối cảnh Việt<scroll>
+Nam.<pause>Chẳng hạn như tên chú trở<scroll>
+thành Linh đi cứu quận chúa xứ<scroll>
+Thanh Nghệ thì mới gọi là<scroll>
+"Việt hóa".<pause><scroll>
+Đúng nhận sai cãi giúp anh.<end>
+
+//Ptr19D
+#W24($1F04D7)
+<text_spd><$02><color><$06>
+Thôi,anh không nói nhiều nữa<line>
+kẻo chú lại dỗi,cho anh là kẻ<line>
+ưa nói đạo lý.<end>
+
+//Ptr19E
+#W24($1F04DA)
+<text_spd><$02><color><$06>
+Anh không thích nói nhiều kẻo<line>
+chú lại cho anh là kẻ ưa nói đạo<line>
+lý.Mệt mỏi với miệng lưỡi thế<scroll>
+gian lắm luôn...<end>
+
+//Ptr19F
+#W24($1F04DD)
+<text_spd><$02><color><$06>
+Sao!Chú mày đã tìm ra được nút<line>
+bí mật rồi à?<pause>Hoan hô!<pause><line>
+Đúng,bọn anh là những kẻ ưa nói<scroll>
+đạo lý,nhưng là kẻ ưa nói đạo lý<scroll>
+đặc biệt và sống rất đạo đức nhá.<end>
+
+//Ptr1A0
+#W24($1F04E0)
+<text_spd><$02><color><$06>
+Thằng này nó có lòng hóng chuyện<line>
+thật sự mày ạ.<pause>Tụi mình hành nó<line>
+chạy đôn chạy đáo từ đầu game<scroll>
+tới giờ,nghĩ cũng tội.<pause><scroll>
+Thôi anh em mình cho nó biết bí<scroll>
+mật ở cái khu này đi hén.<end>
+
+//Ptr1A1
+#W24($1F04E3)
+<text_spd><$02><color><$06>
+Được thoai.<pause><scroll>
+Này chú nhóc,bọn anh đứng gác<line>
+trong cái game này suốt từ năm<line>
+1991 tới giờ mỏi lắm rùi.<pause><scroll><scroll><scroll><line>
+Cảm ơn chú đã trò chuyện với bọn<line>
+anh từ đầu game tới giờ.<pause><line>
+Để cảm ơn,bọn anh sẽ chỉ cho chú<scroll>
+một lối đi bí mật chỉ có ở bản<scroll>
+dịch Việt ngữ này.<end>
+
+//Ptr1A2
+#W24($1F04E6)
+<text_spd><$02><color><$06>
+Chú nhóc!Đứng cho khéo,tránh<line>
+đường cho bọn ta đi.Đừng có đứng<line>
+ngáng đường người lớn.<pause><scroll>
+Đứng ngu thì đừng có trách sao<scroll>
+ta không báo trước đấy nhé.<end>
+
+
+//Ptr1A3
+#W24($1F04E9)
+<text_spd><$02><color><$06>
+Đây,bí mật của khu vực này đây.<line>
+Giờ thì chú hiểu vì sao lính gác<line>
+bọn anh đứng chặn ở đây suốt rồi<scroll>
+chứ.<pause>Giờ chú có thể tự do đi lại<scroll>
+ở khu vực cấm,nhưng có gì<scroll>
+thì bọn anh khum chịu trách nhiệm<scroll>
+đâu nhé.Có sức chơi có sức chịu!<end>
+
+//Ptr1A4
+#W24($1F04EC)
+<color><$06>
+Thôi đi đi.Vui chơi chớ quên<line>
+nhiệm vụ,nhớ về đúng giờ là được.<end>
+
+//Ptr1A5
+#W24($1F04EF)
+<color><$06>
+Cơ hội chỉ đến một lần duy nhất<line>
+trong đời.Kẻ khum biết nắm cơ<line>
+hội là kẻ ngu.<pause><scroll>
+Có khum giữ,mất đừng tìm!<end>
+
+//Ptr1A6
+#W24($1F04F2)
+<text_spd><$01><color><$06>
+Đừng để tao phải nói nhiều!<line>
+Mau về nhà ngủ đi thằng ranh con!<line>
+Đồ con nít hư đốn!<end>
+
+//Ptr1A7
+#W24($1F04F5)
+<text_spd><$03><color><$06>
+<name>,mày là cái đồ vô tâm.<line>
+Thấy chú bị như vậy mà vẫn bỏ<line>
+đi được à...<end>
+
+//Ptr1A8
+#W24($1F04F8)
+<text_spd><$03><color><$06>
+Thôi,tao dỗi rồi.Tao biết cái thân<line>
+tao rồi,khỏi cần mày lo.<line><pause>
+Mà thôi,nghĩ tình chú cháu nên tao<scroll>
+để lại cho mày mấy món đồ phòng<scroll>
+thân trước khi ra đi...<pause><scroll><scroll><scroll><line>
+Đây là 2 quả lựu đạn và 1 mũi tên<line>
+của chú,mày cầm lấy mà dùng.<pause><line>
+Nhớ nhấn nút L hoặc R để chọn<scroll>
+nhanh mấy món mà chú vừa cho...<pause><scroll>
+Đời chiến sĩ chỉ có chừng này<scroll>
+làm vốn...<pause><scroll><scroll><scroll><line>
+Mau đi cứu...hự...<ojisan><sfx><$2E><end>
+
+//Ptr1A9
+#W24($1F04FB)
+<text_spd><$02><color><$06>
+<name>,tôi nói cậu nghe chuyện<line>
+ngoài lề này.Đó là trong cái game<line>
+này chỉ có duy nhất một ngôi làng.<pause><scroll>
+Đó là ngôi làng Kakariko ở phía<scroll>
+Tây của Giáo hội này.<pause><scroll><scroll><scroll><line>
+Mà cậu có biết là từ "giáo hội"<line>
+chuẩn tiếng Việt hơn là từ<line>
+"nhà thờ" không?<end>
+
+//Ptr1AA
+#W24($1F04FE)
+<text_spd><$02><color><$06>
+Mà cậu có biết là tôi biết series<line>
+Zelda từ năm 1995 không?Nhưng<line>
+lúc đó tôi không có chơi.<pause><scroll>
+Mãi tới gần đây chơi phiên bản<scroll>
+Breath of the Wild trên Switch<scroll>
+thấy ưng quá mới bắt đầu để ý tới<scroll>
+series này.<end>
+
+//Ptr1AB
+#W24($1F0501)
+<text_spd><$02><color><$06>
+<name>,cậu có biết là cái game này<line>
+có dung lượng chỉ 8Mb tức 1MB<line>
+hay không?<pause><scroll>
+Chỉ tám mê ga bít thôi mà chứa đủ<scroll>
+mọi thứ từ dữ liệu hình ảnh,âm<scroll>
+thanh cho tới code game.<end>
+
+//Ptr1AC
+#W24($1F0504)
+<text_spd><$02><color><$06>
+Còn bản dịch Việt văn này lên<line>
+tới 16MB,tức 2MB.Phần dung lượng<line>
+bản dịch phình to so với bản gốc<scroll>
+là do chứa thêm nhiều code mới.<pause><scroll>
+Ngoài ra bản dịch còn có thêm<scroll>
+nhiều lời thoại mới mà trong bản<scroll>
+gốc không có.<pause>Chẳng hạn như<scroll>
+những lời cậu đang nghe đây.<end>
+
+//Ptr1AD
+#W24($1F0507)
+<text_spd><$02><color><$06>
+Tôi có công bố mã nguồn của bản<line>
+dịch này,bao gồm lời thoại và mã<line>
+Assembly của máy Super Famicom,<pause><scroll>
+ai quan tâm thì có thể tải từ<scroll>
+trang Stoneboat.<pause>Với mã nguồn này<scroll>
+thì sẽ dễ dàng chỉnh sửa mọi thứ<scroll>
+trong game,thậm chí tạo thành<scroll>
+một phiên bản mới cũng được,<pause>nếu<scroll>
+người vọc có đủ kiến thức về phần<scroll>
+cứng của hệ máy này cũng như ngôn<scroll>
+ngữ lập trình WDC65816 của nó.<pause><scroll><scroll><scroll><line>
+Nếu muốn biết trang chủ Stoneboat<line>
+là gì thì hãy nhấn đồng thời 3 nút<line>
+L + R + START.<pause><scroll>
+Nên nhớ đây là những nút trên tay<scroll>
+cầm của máy chơi game Nintendō<scroll>
+Super Famicom nhé,<pause>không phải của<scroll>
+bàn phím máy tính đâu.Nếu cậu<scroll>
+chơi giả lập thì chú ý giúp.<end>
+
+//Ptr1AE
+#W24($1F050A)
+<text_spd><$02><color><$06>
+<name>,cậu hãy đi đâu đó rồi<line>
+quay lại đây,tôi có điều muốn nói<line>
+với cậu nhưng không phải lúc này.<end>
+
+//Ptr1AF
+#W24($1F050D)
+<text_spd><$02><color><$06>
+<name>,hãy làm theo lời ngài<line>
+thần phụ căn dặn.<end>
+
+//Ptr1B0
+#W24($1F0510)
+<text_spd><$02>
+Bởi vì Vương nữ đâu có con cóc<line>
+nào...Nếu cháu có bắt thì chỉ có<line>
+bắt bướm Vương nữ thôi nhỉ...<pause><scroll>
+Cô bé ấy nổi tiếng là người nuôi<scroll>
+nhiều bướm mà...Ái dà,sao ta bậy<scroll>
+quá vậy.<end>
+
+//Ptr1B1
+#W24($1F0513)
+<name>,cháu có thấy lạ lùng không?<line>
+Bà đứng đây quét rác cả ngày bất<line>
+kể ngày đêm nắng mưa thế nào.<pause><scroll>
+Cháu thấy bà có siêng không?<scroll>
+Bà có cây chổi siêu to siêu<scroll>
+khổng lồ đây.<end>
+
+//Ptr1B2
+#W24($1F0516)
+<text_spd><$02>
+Để ta nói cho cậu biết một nguyên<line>
+tắc vàng trong mấy con game dạng<line>
+RPG như này.<pause><scroll>
+Đó là đừng có nói chuyện nhiều lần<scroll>
+với cùng một NPC,chả được cái gì,<scroll>
+chỉ tốn thời gian vô ích thôi.<end>
+
+//Ptr1B3
+#W24($1F0519)
+<text_spd><$02>
+Nguyên tắc thứ hai là đôi khi nói<line>
+chuyện nhiều lần với cùng một<line>
+NPC sẽ cho cậu biết những bí mật<scroll>
+thầm kín của họ.<pause><scroll>
+Do vậy hãy nói chuyện với các NPC,<scroll>
+thử bắt chuyện nhiều lần với cùng<scroll>
+một nhân vật xem sao.<end>
+
+//Ptr1B4
+#W24($1F051C)
+<text_spd><$02>
+Nếu muốn nghe lại câu đầu tiên ta<line>
+nói thì hãy ra khỏi căn nhà này<line>
+rồi quay lại đây.<end>
+
+//Ptr1B5
+#W24($1F051F)
+<text_spd><$02>
+Có thờ có thiêng có kiêng có lành<line>
+cháu ạ.Vạn sự phải lấy chữ tín làm<line>
+đầu.<pause>Tín tâm tín nghĩa tín chỉ tín<scroll>
+dụng tín niệm tín nhiệm tín thành<scroll>
+...Tín nào cũng là tín nhưng<scroll>
+không phải mọi tín đều như nhau.<pause><scroll>
+Trước khi cháu vào đây thì thầy<scroll>
+đã gieo được quẻ báo trước rằng<scroll>
+hôm nay có khách nhỏ tuổi đi vào,<scroll>
+ban đầu từ chối nhưng sau cũng đổi<scroll>
+ý mà xem cho thầy.<pause><scroll>
+Đợi thầy chút để giở quẻ í nhầm,<scroll>
+giở quẻ ra xem nhé.Mà ý thầy định<scroll>
+nói là gieo quẻ đấy.<end>
+
+//Ptr1B6
+#W24($1F0522)
+<text_spd><$02>
+<name> đấy à.Cháu lại đến chỗ ta<line>
+làm một quẻ phỏng.Ta nói cái bộ<line>
+môn xem bói này gây nghiện phết.<pause><scroll>
+Nào,để thầy gieo một quẻ nhá.<scroll>
+<migi>Nhờ thầy ạ<scroll>
+  Thôi để khi khác<force_end><end>
+
+//Ptr1B7
+#W24($1F0525)
+<text_spd><$02>
+Nếu cậu học về đặc trưng phần<line>
+cứng của một hệ máy chơi game và<line>
+ngôn ngữ phần mềm của nó thì cậu<scroll>
+sẽ làm được mọi điều với bất kỳ<scroll>
+game nào của hệ máy đó.<end>
+
+//Ptr1B8
+#W24($1F0528)
+<text_spd><$02>
+Cậu có thể thay đổi mọi thứ,biến<line>
+nó thành một game hoàn toàn mới.<pause><line>
+Hay thậm chí là cậu có thể viết<scroll>
+một game của riêng cậu.<end>
+
+//Ptr1B9
+#W24($1F052B)
+<text_spd><$02>
+Như tôi bây giờ có thể làm bất cứ<line>
+điều gì đối với bất kỳ game nào<line>
+thuộc hệ Super Famicom,tức SNES.<end>
+
+//Ptr1BA
+#W24($1F052E)
+<text_spd><$02>
+Và tôi cũng là người đầu tiên ở<line>
+Việt Nam cho ra đời bản dịch game<line>
+Super Famicom hoàn chỉnh.<end>
+
+//Ptr1BB
+#W24($1F0531)
+<text_spd><$02>
+Bản dịch Việt ngữ đầu tiên của tôi<line>
+ra đời năm 2009.Đó là một game<line>
+chiến thuật mà dân gian gọi là<scroll>
+"Mộc đế chiến kỷ".<pause><scroll><scroll><scroll><line>
+Kể từ đó thỉnh thoảng tôi còn dịch<line>
+nhiều game console khác như NES<line>
+tức Famicom,hay Sony PS1,Sony<scroll>
+PSP và một vài game PC.<pause><scroll>
+Nhưng chủ yếu tôi tập trung vào hệ<scroll>
+Nintendō Super Famicom hay còn<scroll>
+gọi là máy SNES ở Âu Mỹ.<pause><scroll>
+Đây mới là hệ máy chân ái của đời<scroll>
+tôi.Tôi cũng có vài game tự chế<scroll>
+trên hệ máy này.<end>
+
+//Ptr1BC
+#W24($1F0534)
+<text_spd><$02>
+Bây giờ thì tôi có thể làm mọi<line>
+điều đối với máy Super Famicom.<pause><line>
+Dịch bất kỳ game nào,hack bất cứ<scroll>
+thứ gì cho bất kỳ game nào thuộc<scroll>
+hệ máy này.<pause><scroll>
+Hay làm game hoàn toàn mới cho hệ<scroll>
+máy này cũng được nốt.<pause><scroll>
+Lưu ý là "nốt" chứ không phải là<scroll>
+"not",thể phủ định của In-lích nhé.<end>
+
+//Ptr1BD
+#W24($1F0537)
+<text_spd><$02>
+Khi tôi bắt đầu tiếp cận con đường<line>
+vọc game console thì cả đất nước<line>
+này không có ai khác giống tôi.<pause><scroll>
+Lúc đó thì khái niệm dịch game từ<scroll>
+ngôn ngữ khác sang tiếng Việt hầu<scroll>
+như chưa tồn tại,<pause>ngay cả đối<scroll>
+với game PC chứ đừng nói tới game<scroll>
+console,<pause>nhất là console cổ như<scroll>
+SNES (Super Famicom) với NES.<end>
+
+//Ptr1BE
+#W24($1F053A)
+<text_spd><$02>
+Mãi tới năm 2015 trở đi thì cộng<line>
+đồng dịch game sang tiếng Việt mới<line>
+bắt đầu khởi sắc,<pause>nhưng chủ yếu là<scroll>
+xoay quanh mảng game PC chứ hiếm<scroll>
+người động tới game console,mà hệ<scroll>
+cổ như này lại càng hiếm.<end>
+
+//Ptr1BF
+#W24($1F053D)
+<text_spd><$02>
+Tới tận bây giờ,sau hơn chục năm<line>
+kể từ lúc có bản dịch tiếng Việt<line>
+hoàn chỉnh đầu tiên trên SNES,<pause><scroll>
+ngày ngày tôi vẫn say mê đọc<scroll>
+code SNES,<pause>tự làm băng vật lý cho<scroll>
+SNES.<pause>Tình yêu của tôi đối với hệ<scroll>
+máy này còn lớn hơn cả tình yêu<scroll>
+của tôi dành cho một vài người.<end>
+
+//Ptr1C0
+#W24($1F0540)
+<text_spd><$02>
+Thời gian của tôi ngày càng ít đi<line>
+nhưng vẫn chưa thấy ai khác ở<line>
+đất nước này đi con đường giống<scroll>
+tôi.<pause>Cảm giác một mình trên đỉnh<scroll>
+cô liêu nó kỳ lạ lắm.<pause><scroll>
+Suốt từ đó tới giờ tôi luôn tìm<scroll>
+kiếm người nào khác có cùng chí<scroll>
+hướng,nhưng không một ai.<end>
+
+//Ptr1C1
+#W24($1F0543)
+<text_spd><$05>
+Nhưng mà tôi không bao giờ thấy<line>
+buồn chán.Bởi vì đối với tôi thì<line>
+cuộc sống là những chuỗi dài đam<scroll>
+mê bất tận.<pause><scroll><scroll><scroll><line>
+Haizz...Đời lắm đam mê nó khổ thế<line>
+đấy.Đối với tôi thì 1 ngày có 24<line>
+tiếng đồng hồ chẳng bao giờ đủ.<end>
+
+//Ptr1C2
+#W24($1F0546)
+<text_spd><$02>
+Tôi mê văn chương nghệ thuật,<line>
+tôi say mê ngôn từ.Tôi mê trà<line>
+mê bánh,mê tìm tòi mọi thứ.<pause><scroll>
+Nhưng tôi mê nhất vẫn là luận lý<scroll>
+logic,<pause>thế nên tôi mê môn ngôn ngữ<scroll>
+giao tiếp với phần cứng như điếu<scroll>
+đổ,thứ mà các cậu gọi là<scroll>
+"ngôn ngữ máy" hay "ngôn ngữ bậc<scroll>
+thấp" hay Assembly gì gì ấy.<pause><scroll>
+Vì mê Super Famicom,mê luận lý<scroll>
+logic,<pause>lại mê cả văn chương nghệ<scroll>
+thuật với cả ngôn từ Đông Tây nên<scroll>
+rốt cuộc con đường tôi đi chả<scroll>
+giống ai.<end>
+
+//Ptr1C3
+#W24($1F0549)
+<text_spd><$02>
+Ngoài lề một tẹo,từ khi biết đọc<line>
+biết viết tới giờ thì tôi viết lách<line>
+dịch thuật cũng được hòm hòm.<pause><scroll>
+Mà cậu có biết "hòm hòm" nghĩa là<scroll>
+gì không?<pause><scroll>
+Nếu đem mọi thứ tôi từng viết,<scroll>
+dịch thuật từ trước tới giờ,kể cả<scroll>
+những thứ được xuất bản chính<scroll>
+thức và những thứ phục vụ cá nhân,<scroll>
+không xuất bản,<pause>in thành khổ A4,<scroll>
+cỡ chữ 10,kiểu font Time News<scroll>
+Roman thì số giấy ấy chất cao hơn<scroll>
+chiều cao từ gót chân<scroll>
+lên tới đỉnh đầu của tôi.<end>
+
+//Ptr1C4
+#W24($1F054C)
+<text_spd><$02>
+Mà từ nãy tới giờ toàn nói chuyện<line>
+ngoài lề thôi chứ có chuyện gì là<line>
+trong lề đâu nhỉ.<end>
+
+//Ptr1C5
+#W24($1F054F)
+<text_spd><$02>
+Thôi,dù sao cũng mua vui được một<line>
+vài trống canh.Cảm ơn cậu đã lắng<line>
+nghe kẻ lắm điều này.<pause><scroll>
+Tôi chỉ lắm điều thế thôi chứ lại<scroll>
+cực ghét thói nỏ mồm.Hãy nhớ lấy.<end>
+
+//Ptr1C6
+#W24($1F0552)
+<text_spd><$02>
+Chốt lại là tôi đang tìm người có<line>
+chí hướng muốn lãnh hội mọi thứ<line>
+về Super Famicom,tức máy SNES,<scroll>
+từ phần cứng cho tới phần mềm.<pause><scroll>
+Nếu cậu lập chí muốn hội đắc cực ý<scroll>
+chí cao chí tôn này thì hãy tìm<scroll>
+tới ta.<end>
+
+//Ptr1C7
+#W24($1F0555)
+<text_spd><$02>
+Đừng hỏi tìm ta ở đâu.Dù khó tìm<line>
+thật đấy,nhưng nếu muốn thì sẽ tìm<line>
+cách,không muốn thì viện lý do.<pause><scroll>
+Đúng nhận sai cãi giúp.<end>
+
+//Ptr1C8
+#W24($1F0558)
+<text_spd><$02>
+Thôi,nãy giờ ngoài lề đã nhiều nên<line>
+giờ ta tấp vào trong lề nào.<pause><scroll><scroll><line><line>
+Chào <name>.Ngày xưa căn nhà này<line>
+là sào huyệt ẩn náu của lũ đạo tặc.<pause><line>
+Mà cái gã đó tên là gì nhỉ...<pause><scroll>
+Ah đúng rồi,tên đạo tặc Blind khét<scroll>
+tiếng,hắn rất ghét chỗ sáng sủa.<end>
+
+//Ptr1C9
+#W24($1F055B)
+Hoan hô!Cuối cùng cũng lấy được<line>
+Master-sword rồi...Mà khoan!<line>
+Có vẻ sai sai...Hàng pha kè rùi!<pause><scroll><text_spd><$02>
+Mà khoan...Câu này mình nhớ là đã<scroll>
+nói từ trước khi tìm được thanh<scroll>
+kiếm Master-sword rùi mà.<pause><scroll>
+Sao bây giờ lại nói cùng câu y<scroll>
+chang trước vậy...<pause><scroll>
+Ái dà,Ninh Tiền Đô lười quá đi!<end>
+
+//Ptr1CA
+#W24($1F055E)
+<text_spd><$01>
+<name> đó à?Lại tới chỗ thầy<line>
+xem quẻ đó ư?<pause><line>
+Ta nói dù là cõi âm hay cõi dương<scroll>
+thì chúng sinh cũng đều khao khát<scroll>
+muốn biết tương lai cả thôi.<pause><scroll>
+Nào,để thầy xem quẻ cho nhé?<scroll>
+<migi>Xem<scroll>
+  Không xem<force_end><end>
+  
+//Ptr1CB
+#W24($1F0561)
+<text_spd><$02>
+Thần xin kính cẩn nghiêng mình<line>
+chào Vương nữ Zelda.Đây là phiên<line>
+bản thông minh hơn của thần trong<scroll>
+cái game này đấy,thưa Vương nữ.<pause><scroll>
+Vì sao thần nói vậy á?Bởi vì trong<scroll>
+bản gốc thì thằng lính gác này luôn<scroll>
+nói cùng một câu cho dù Vương nữ<scroll>
+Zelda có theo thằng nhóc <name><scroll>
+tới đây hay không.<pause><scroll>
+Chỉ có ở bản tiếng Việt này thì<scroll>
+thằng lính mới chịu đổi câu thoại<scroll>
+khi Zelda đi cùng thằng nhãi <name><scroll>
+tới đây.<end>
+
+//Ptr1CC
+#W24($1F0564)
+<text_spd><$02>
+Âm ba thoáng rung cánh đào rơi ~<pause><line>
+Nao nao bầu sương khói phủ quanh<line>
+trời ~<pause><scroll>
+Lênh đênh dưới hoa chiếc<scroll>
+thuyền nan ~<pause><scroll>
+Quê dương dần xa lấp núi ngàn ~<pause><scroll>
+Bâng khuâng chèo khua nước<scroll>
+Ngọc tuyền ~<pause><scroll>
+Ai hát bên bờ Đào nguyên ~<end>
+
+
+//Ptr1CD
+#W24($1F0567)
+<text_spd><$02>
+Thiên Thai ~<line>
+Ánh trăng xanh mơ tan thành suối<line>
+trần gian ~<pause><scroll>
+Ái ân thiên tiên em ngờ phút mê<scroll>
+cuồng có một lần ~<pause><scroll>
+Gió hắt trầm tiếng ca ~<scroll>
+tiếng phách ròn lắng xa ~<pause><scroll>
+Nhắc chi ngày xưa đó đến se<scroll>
+buồn lòng ta ~<end>
+
+//Ptr1CE
+#W24($1F056A)
+<text_spd><$02>
+Kìa đường lên tiên,<line>
+kìa nguồn hương duyên ~<pause><line>
+theo gió tiếng đàn xao xuyến ~<pause><scroll>
+Phím tơ lưu luyến,<scroll>
+mấy cung u huyền ~<pause><scroll>
+Mấy cung trìu mến<scroll>
+như nước reo mạn thuyền ~<end>
